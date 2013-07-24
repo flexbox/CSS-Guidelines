@@ -83,7 +83,7 @@ sur plusieures lignes CSS.
 Certaines personnes préfèrent travailler avec de simple fichiers volumineux.
 Cela fonctionne très bien pour les petits projets mais avec les directives suivantes
 vous aller très vite renconter des problèmes.
-Depuis l'arrivée de sass j'ai commencé a séparer mes feuilles de styles en petits
+Depuis l'arrivée de sass j'ai commencé à séparer mes feuilles de styles en petits
 fichiers. Cette méthode est aussi très bonne. Quelle que soit la méthode que vous
 choisissez, les règles suivantes et les lignes directrices s'appliquent. La seule
 différence notable est en ce qui concerne notre table des matières et nos titres
