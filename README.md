@@ -382,7 +382,7 @@ peut-être pas pour un autre dev. Chaque nouveau morceau de code doit-être docu
 
 ### Commentaires sous stéroïdes
 
-Il ya un certain nombre de techniques plus avancées que vous pouvez employer en
+Il y a un certain nombre de techniques plus avancées que vous pouvez employer en
 ce qui concerne les commentaires, à savoir :
 
 * Les sélecteurs spécifiques
@@ -730,7 +730,7 @@ CSS clairement utilisé de façon arbitraire simplement « parce que ça fonctio
 
 ## Débugage
 
-Si vous rencontrez un problème CSS **relisez le code avant vous commencer à en
+Si vous rencontrez un problème CSS **relisez le code avant de commencer à en
 ajouter encore plus** dans l'espoir de le corriger. Le problème existe en CSS et
 il est déjà écrit, ajouter plus de CSS n'est pas la bonne réponse !
 
