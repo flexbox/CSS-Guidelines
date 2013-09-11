@@ -391,7 +391,7 @@ En écrivant d'abord vos balises, vous pouvez vous concentrer sur les données, 
 
 ## CSSOO
 
-Je travaille d'une manière CSSOO, je sépare les composants en structure (objets) et peau (extensions). L'**analogie** suivante peut correspondre :
+Je travaille d'une manière CSSOO, je sépare les composants en structure (objets) et peau (extensions). L' **analogie** suivante peut correspondre :
 
     .room{}
 
