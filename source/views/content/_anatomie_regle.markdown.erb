@@ -1,0 +1,63 @@
+# Anatomie d'une règle
+
+    [selecteur]{
+        [propriété]:[valeur];
+        [<- Déclaration ->]
+    }
+
+J'applique un certain nombre de normes concernant la structure des règles CSS.
+
+* Utiliser `-` pour délimiter les noms de classe (sauf pour cet exemple de
+  [convention de nommage](#naming-conventions))
+* 2 espaces d'indentation
+* Multi-ligne
+* Déclaration par ordre de pertinence (et non alphabétique)
+* Indenter les déclarations de préfixes et aligner leurs valeurs
+* Indenter les règles en reflètant le DOM
+* Toujours inclure le point-virgule final
+
+Un petit exemple :
+
+    .widget{
+        padding:10px;
+        border:1px solid #BADA55;
+        background-color:#C0FFEE;
+        -webkit-border-radius:4px;
+           -moz-border-radius:4px;
+                border-radius:4px;
+    }
+        .widget-heading{
+            font-size:1.5rem;
+            line-height:1;
+            font-weight:bold;
+            color:#BADA55;
+            margin-right:-10px;
+            margin-left: -10px;
+            padding:0.25em;
+        }
+
+Ici, nous pouvons voir que `.widget-heading` doit être un enfant de `.widget`
+que nous avons indenté `.widget-heading` d'un niveau plus profond que `.widget`.
+C'est une information utile pour les développeurs qui peut être scannée
+seulement d'un coup d'oeil suivant l'indentation de notre ensemble de règles.
+
+Nous pouvons également voir que les déclarations de `.widget-heading` sont triées par leur pertinence. `.widget-heading` doit être un élément textuel si nous commençons avec nos règles de texte, suivies par toutes les autres.
+
+Une exception à notre règle multi-lignes pourrait être dans le cas suivant :
+
+    .t10    { width:10% }
+    .t20    { width:20% }
+    .t25    { width:25% }       /* 1/4 */
+    .t30    { width:30% }
+    .t33    { width:33.333% }   /* 1/3 */
+    .t40    { width:40% }
+    .t50    { width:50% }       /* 1/2 */
+    .t60    { width:60% }
+    .t66    { width:66.666% }   /* 2/3 */
+    .t70    { width:70% }
+    .t75    { width:75% }       /* 3/4*/
+    .t80    { width:80% }
+    .t90    { width:90% }
+
+Dans cet exemple (extrait du système de grille d'[inuit.css](
+https://github.com/csswizardry/inuit.css/blob/master/inuit.css/partials/base/_tables.scss#L88)), il est plus logique de tout concentrer sur une seule ligne.

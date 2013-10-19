@@ -1,5 +1,4 @@
-//= require "vendor/jquery"
 //= require "vendor/zepto"
 //= require "foundation/foundation"
-//= require "foundation/foundation.topbar"
-//= require "function"
+//= require "foundation/foundation.section"
+//= require "init"

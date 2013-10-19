@@ -25,6 +25,7 @@ code{
 }
 code {
     white-space: nowrap;
+    color: $magenta;
 }
 pre > code {
     background: none repeat scroll 0 0 transparent;
@@ -44,18 +45,6 @@ pre > code {
 }
 .color-contrast{
     color: $gray;
-}
-
-.top-bar-section ul{
-    padding: 0;
-}
-
-.top-bar-section ul li > a {
-    text-decoration: none;
-}
-
-.top-bar-section code{
-    color: #444444;
 }
 
 .title-area{

@@ -3,17 +3,16 @@
   description: En travaillant sur de grands projets fonctionnant avec des dizaines de développeurs, il est important que nous travaillions tous de façon unifiée
 ---
 
-== partial 'views/menu'
-
 .row
-  .large-10.large-centered.columns
+  .large-3.columns
+    = partial 'views/menu'
+
+  .large-9.columns
     h1.giga Feuilles de styles CSS
     h2.alpha Conseils et bonnes pratiques
     hr
     == Maruku.new(partial "views/content/introduction").to_html;
     hr
-    == Maruku.new(partial "views/content/guide").to_html;
+    == Maruku.new(partial "views/content/sass").to_html;
     hr
     == partial "views/thanks"
-
-== partial "views/footer"

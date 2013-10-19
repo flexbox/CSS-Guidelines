@@ -1,129 +1,137 @@
-nav.top-bar.sticky
-  ul.title-area
-    li.name
-      a href="/"
-        '{ Guide CSS }
-    /! Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
-    li.toggle-topbar.menu-icon
-      a href="#"
-        span Menu
-  section.top-bar-section
-    /! Left Nav Section
-    ul.left
-      li.divider
-      li.has-dropdown
-        a href="#"
-          'Sommaire
-        ul.dropdown
-          li.has-dropdown
-            a href="#anatomie-dun-document-css"
-              'Anatomie d’un document CSS
-            ul.dropdown
-              li
-                a href="#gnralits"
-                  'Généralités
-              li
-                a href="#un_seul_fichier_ou_plusieurs_fichiers_"
-                  'Un seul fichier ou plusieurs fichiers ?
-              li
-                a href="#table_des_matires"
-                  'Table des matières
-              li
-                a href="#titres_de_section"
-                  'Titre de section
-          li
-            a href="#ordre_des_sources"
-              'Ordre des sources
-          li
-            a href="#anatomie_dune_rgle"
-              'Anatomie d'une règle
-          li.has-dropdown
-            a href="#convention_de_nommage"
-              'Conventions de nommage
-            ul.dropdown
-              li
-                a href="#classes_en_html"
-                  'Classes en HTML
-              li
-                a href="#ancres_javascript"
-                  'Ancres Javascript
-              li
-                a href="#localisation"
-                  'Localisation
-          li.has-dropdown
-            a href="#commentaires"
-              'Commentaires
-            ul.dropdown
-              li
-                a href="#commentaires_sous_strodes"
-                  'Commentaires sous stéroïdes
-              li
-                a href="#slecteurs_spcifiques"
-                  'Sélecteurs spécifiques
-              li
-                a href="#code_des_balises"
-                  'Code des balises
-              li
-                a href="#association_des_objets"
-                  'Association des objets
-          li
-            a href="#ecrire_du_css"
-              'Ecrire du CSS
-          li
-            a href="#construire_de_nouveau_composants"
-              'Construire de nouveau composants
-          li
-            a href="#cssoo"
-              'CSSOO
-          li
-            a href="#mise_en_page"
-              'Mise en page
-          li.has-dropdown
-            a href="#taille_des_interfaces"
-              'Taille des interfaces
-            ul.dropdown
-              li
-                a href="#taille_des_polices"
-                  'Taille des polices
-          li
-            a href="#raccourcis"
-              'Raccourcis
-          li
-            a href="#ids"
-              'IDs
-          li.has-dropdown
-            a href="#slecteurs"
-              'Sélecteurs
-            ul.dropdown
-              li
-                a href="#surqualification_des_slecteurs"
-                  'Surqualification des sélecteurs
-              li
-                a href="#performance_des_slecteurs"
-                  'Performance des sélecteurs
-          li
-            a href="#lintention_de_slection"
-              'L’intention de sélection
-          li
-            a href="#important"
-              code !important
-          li
-            a href="#nombres_magiques_et_absolus"
-              'Nombres magiques et absolu
-          li
-            a href="#styles_conditionnel"
-              'Styles conditionnel
-          li
-            a href="#dbugage"
-              'Débugage
-          li
-            a href="#prprocesseurs"
-              'Préprocesseurs
-      li.divider
+div class="section-container accordion" data-section="accordion"
+  section class="active"
+    p class="title" data-section-title=""
+      = link_to 'Anatomie d’un document CSS', '#anatomie-dun-document-css'
+    div class="content" data-section-content=""
+      p
+        = link_to 'Généralités', '#gnralits'
+      p
+        = link_to 'Plusieurs fichiers ?', '#un_seul_fichier_ou_plusieurs_fichiers_'
+      p
+        = link_to 'Table des matières', '#table_des_matires'
+      p
+        = link_to 'Titre de section', '#titres_de_section'
+  
+  section
+    p class="title" data-section-title=""
+      = link_to 'Ordre des sources', '#ordre_des_sources'
+    div class="content" data-section-content=""
+      p Content of section 2.
+  
+  section
+    p class="title" data-section-title=""
+      = link_to 'Anatomie d\'une règle', '#anatomie_dune_rgle'
+    div class="content" data-section-content=""
+      p Content of section 3.
 
-    ul.right
-      li.divider
-      li#btn-tw
-        a.twitter-follow-button data-lang="fr" data-show-count="false" href="https://twitter.com/_flexbox"
-      li#btn-gh
-        iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=flexbox&repo=CSS-Guidelines&type=fork" width="62"
+  section
+    p class="title" data-section-title=""
+      = link_to 'Conventions de nommage', '#convention_de_nommage'
+    div class="content" data-section-content=""
+      p
+        = link_to 'Classes HTML', '#classes_en_html'
+      p
+        = link_to 'Ancres Javascript', '#ancres_javascript'
+      p
+        = link_to 'Localisation', '#localisation'
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Commentaires', '#commentaires'
+    div class="content" data-section-content=""
+      p
+        = link_to 'Commentaires sous stéroïdes', '#commentaires_sous_strodes'
+      p
+        = link_to 'Sélecteurs spécifiques', '#slecteurs_spcifiques'
+      p
+        = link_to 'Code des balises', '#code_des_balises'
+      p
+        = link_to 'Association des objets', '#association_des_objets'
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Ecrire du CSS', '#ecrire_du_css'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Nouveau composants', '#construire_de_nouveau_composants'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'CSSOO', '#cssoo'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Mise en page', '#mise_en_page'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Taille des interfaces', '#taille_des_interfaces'
+    div class="content" data-section-content=""
+      p
+        = link_to 'Taille des polices', '#taille_des_polices'
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Raccourcis', '#raccourcis'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'IDs', '#ids'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Sélecteurs', '#slecteurs'
+    div class="content" data-section-content=""
+      p
+        = link_to 'Surqualification', '#surqualification_des_slecteurs'
+      p
+        = link_to 'Performance', '#performance_des_slecteurs'
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'L’intention de sélection', '#lintention_de_slection'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to '!important', '#important'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Nombres magiques', '#nombres_magiques_et_absolus'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Styles conditionnel', '#styles_conditionnel'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Débugage', '#dbugage'
+    div class="content" data-section-content=""
+      p Content of section 2.
+
+  section
+    p class="title" data-section-title=""
+      = link_to 'Préprocesseurs', '#prprocesseurs'
+    div class="content" data-section-content=""
+      p Content of section 2.

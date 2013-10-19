@@ -1,7 +1,19 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
 @import "compass";
 
-@import "color";
 @import "normalize";
-@import "foundation";
+@import "settings";
+
+// Foundation Components
+@import
+  "foundation/global",
+  "foundation/grid",
+  "foundation/visibility",
+  "foundation/type",
+  "foundation/section";
+
+@import "color";
 @import "typeplate";
 @import "theme";

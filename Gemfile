@@ -1,5 +1,8 @@
 source 'http://rubygems.org'
 
+# WAT gem for ubuntu
+gem 'therubyracer'
+
 gem 'maruku'
 gem 'middleman', '~>3.1.3'
 gem 'middleman-gh-pages'
