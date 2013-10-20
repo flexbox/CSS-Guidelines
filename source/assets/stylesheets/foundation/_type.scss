@@ -70,7 +70,7 @@ $definition-list-margin-bottom: emCalc(12) !default;
 // We use these to style blockquotes
 $blockquote-font-color: lighten($header-font-color, 30%) !default;
 $blockquote-padding: emCalc(9, 20, 0, 19) !default;
-$blockquote-border: 1px solid #ddd !default;
+$blockquote-border: none;
 $blockquote-cite-font-size: emCalc(13) !default;
 $blockquote-cite-font-color: lighten($header-font-color, 20%) !default;
 $blockquote-cite-link-color: $blockquote-cite-font-color !default;

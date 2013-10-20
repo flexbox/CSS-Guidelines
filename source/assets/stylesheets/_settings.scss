@@ -73,11 +73,7 @@ $opposite-direction: right !default;
   $opposite-direction: left;
 }
 
-// We use these as default colors throughout
-$primary-color: #2ba6cb !default;
-$secondary-color: #e9e9e9 !default;
-$alert-color: #c60f13 !default;
-$success-color: #5da423 !default;
+
 
 // We use these to make sure border radius matches unless we want it different.
 $global-radius: 3px !default;

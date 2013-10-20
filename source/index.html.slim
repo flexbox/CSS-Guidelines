@@ -4,15 +4,14 @@
 ---
 
 .row
-  .large-3.columns
-    = partial 'views/menu'
-
-  .large-9.columns
+  .large-12.columns
     h1.giga Feuilles de styles CSS
+    hr
     h2.alpha Conseils et bonnes pratiques
+    = Maruku.new(partial "views/content/introduction").to_html;
+    
+    .row
+      .small-4.small-centered.columns
+        = link_to 'Commencer la lecture &rtrif;', '/document-css.html', class: 'button large'
     hr
-    == Maruku.new(partial "views/content/introduction").to_html;
-    hr
-    == Maruku.new(partial "views/content/sass").to_html;
-    hr
-    == partial "views/thanks"
+    = partial "views/thanks"

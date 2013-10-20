@@ -5,6 +5,7 @@
 
 @import "normalize";
 @import "settings";
+@import "color";
 
 // Foundation Components
 @import
@@ -12,8 +13,10 @@
   "foundation/grid",
   "foundation/visibility",
   "foundation/type",
-  "foundation/section";
+  "foundation/section",
+  "foundation/buttons",
+  "foundation/top-bar";
 
-@import "color";
 @import "typeplate";
 @import "theme";
+@import "module-feedback";

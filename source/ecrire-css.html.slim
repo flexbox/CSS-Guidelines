@@ -1,0 +1,12 @@
+---
+  title: Ecrire du CSS • Conseils et bonnes pratiques
+---
+
+.row
+  .large-3.columns
+    = partial 'views/menu'
+
+  .large-9.columns
+    = Maruku.new(partial "views/content/ecrire").to_html;
+
+    = partial 'views/feedback'
