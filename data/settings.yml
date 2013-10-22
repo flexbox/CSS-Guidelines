@@ -1,3 +1,7 @@
+site:
+  name: 'Guide CSS'
+  url: 'http://guidecss.fr'
+  logo: 'http://guidecss.fr/favicon_base.png'
 social:
   google_plus: 'https://plus.google.com/u/0/113401424510170217860'
   twitter: 'https://twitter.com/_flexbox'
