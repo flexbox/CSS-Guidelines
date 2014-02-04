@@ -1,11 +1,13 @@
-require 'maruku'
+page "/sitemap.xml", :layout => false
 
-activate :gzip
-activate :livereload
+require 'maruku'
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
+
+activate :gzip
+activate :livereload
 
 configure :build do
   activate :minify_css

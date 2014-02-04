@@ -7,5 +7,7 @@ gem 'maruku'
 gem 'middleman', '~>3.1.3'
 gem 'middleman-gh-pages'
 gem 'middleman-livereload', '~> 3.1.0'
-gem "middleman-favicon-maker"
+gem 'middleman-favicon-maker'
+
 gem 'slim'
+gem 'builder', '~> 3.0'
