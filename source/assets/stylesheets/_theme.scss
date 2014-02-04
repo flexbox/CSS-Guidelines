@@ -6,7 +6,6 @@ body {
     padding: 2em 0 1em;
 }
 
-
 h1{
     text-shadow: 0 2px 0 #FCF9EE, 0 4px 0 rgba(0, 0, 0, 0.15);
     margin: 1em 0 !important;
@@ -14,6 +13,11 @@ h1{
 
 h2{
     text-shadow: 0 1px 0 #FCF9EE, 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+footer p,
+.top-bar {
+    text-shadow : 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
 code{
@@ -25,6 +29,7 @@ code{
 }
 code {
     white-space: nowrap;
+    color: $magenta;
 }
 pre > code {
     background: none repeat scroll 0 0 transparent;
@@ -37,25 +42,13 @@ pre > code {
     background-color: #F8F8F8;
     border: 1px solid $gray;
     border-radius: 3px 3px 3px 3px;
-    font-size: 13px;
-    line-height: 19px;
     overflow: auto;
-    padding: 6px 10px;
+    padding: 0.5em 1em;
+    margin: 0 0 1.5em;
 }
+
 .color-contrast{
     color: $gray;
-}
-
-.top-bar-section ul{
-    padding: 0;
-}
-
-.top-bar-section ul li > a {
-    text-decoration: none;
-}
-
-.top-bar-section code{
-    color: #444444;
 }
 
 .title-area{
@@ -71,6 +64,7 @@ pre > code {
 a {
     color: $cyan;
     text-decoration: none;
+    @include single-transition();
 }
 
 a:hover {
@@ -81,4 +75,10 @@ hr {
     height:0px; border:0px;
     border-top: 3px dashed $gray;
     margin: 1em 0 2em;
+}
+
+.section-container {
+    p + p {
+        text-indent: 0;
+    }
 }

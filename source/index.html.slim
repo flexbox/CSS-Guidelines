@@ -3,17 +3,15 @@
   description: En travaillant sur de grands projets fonctionnant avec des dizaines de développeurs, il est important que nous travaillions tous de façon unifiée
 ---
 
-== partial 'views/menu'
-
 .row
-  .large-10.large-centered.columns
+  .large-12.columns
     h1.giga Feuilles de styles CSS
+    hr
     h2.alpha Conseils et bonnes pratiques
+    = Maruku.new(partial "views/content/introduction").to_html;
+    
+    .row
+      .small-4.small-centered.columns
+        = link_to 'Commencer la lecture &rtrif;', '/document-css.html', class: 'button large'
     hr
-    == Maruku.new(partial "views/content/introduction").to_html;
-    hr
-    == Maruku.new(partial "views/content/guide").to_html;
-    hr
-    == partial "views/thanks"
-
-== partial "views/footer"
+    = partial "views/thanks"
