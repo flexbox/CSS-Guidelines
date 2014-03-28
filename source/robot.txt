@@ -1,3 +1,0 @@
-Sitemap: http://www.guidecss.fr/sitemap.xml
-User-Agent: *
-Disallow:
