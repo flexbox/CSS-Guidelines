@@ -1,0 +1,21 @@
+{
+  "name": "CSS-Guidelines",
+  "version": "0.0.1",
+  "homepage": "https://guidecss.fr",
+  "authors": [
+    "flexbox <dleuliette@gmail.com>"
+  ],
+  "description": "Conseils et bonnes pratiques pour la création de CSS maintenable",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "smoothstate": "~0.5.1"
+  }
+}
