@@ -1,12 +1,80 @@
 ---
-  title: Conventions CSS • Conseils et bonnes pratiques
+  title: Conventions CSS
 ---
 
-.row
-  .large-3.columns
-    = partial 'views/menu'
+markdown:
+  # Convention de nommage
 
-  .large-9.columns
-    = Maruku.new(partial "views/content/convention").to_html;
+  La plupart du temps, j'utilise simplement des classes délimités par des traits
+  d'union (ex. `.Foo-bar`, pas `.foo_bar` ou `.FooBar`), mais dans certaines
+  circonstances, j'utilise la notation BEM (Block, Élément, Modifieur).
 
-    = partial 'views/feedback'
+  <abbr title="Block, Element, Modifier">BEM</abbr> est une méthode pour nommer et classifier vos sélecteurs CSS de façon à les rendre beaucoup plus strict, transparent et informatif.
+
+  La convention de nommage suit ce modèle :
+
+      .block{}
+      .block__element{}
+      .block--modifieur{}
+
+  * `.block` représente le niveau supérieur d'une abstraction ou d'un composant.
+  * `.block__element` représente un descendant de `.bloc` puisqu'il contribue à former `.bloc` dans son ensemble.
+  * `.block--modifieur` représente un état ou une version différente de `.block`.
+
+  Une **analogie** du fonctionnement de la méthode BEM :
+
+      .personne{}
+      .personne--femme{}
+          .personne__main{}
+          .personne__main--gauche{}
+          .personne__main--droite{}
+
+  Ici, nous pouvons voir que l'objet de base que nous décrivons est une personne, et qu'un autre type de personne pourrait être une femme. Nous pouvons également voir que les gens ont des mains, ce sont des sous-parties des personnes, et il y a différentes variantes, comme main gauche et main droite.
+
+  Nous pouvons maintenant nommer nos sélectionneurs en fonction de leurs objets de base et nous pouvons également savoir ce que le sélecteur fait, est-il un sous-composant (`__`) ou une variation (`--`)?
+
+  Ainsi, `.page-wrapper` est un sélecteur autonome, il ne fait pas partie d'une
+  abstraction ou d'un composant et comme tel il nommé correctement.
+  Toutefois, `.widget-heading` _est_ lié à un composant, c'est un enfant du constructeur `.widget`.
+  Nous devrions renommer cette classe `.widget__heading`.
+
+  La notation BEM est un peu laide, plus verbeuse, mais elle nous donne beaucoup plus de pouvoirs dans le glanage d'informations sur les fonctions et sur les relations entre les éléments, uniquement avec leur nom de classes. En outre, la syntaxe BEM sera généralement très bien compressée (gzip) puisqu'elle favorise / fonctionne bien avec la répétition.
+
+  Peu importe si vous avez besoin d'utiliser BEM ou non, assurez-vous de toujours nommer vos classes judicieusement ; garder un nom aussi court que possible, mais aussi long que nécessaire. S'assurer que les objets ou les abstractions sont très vaguement nommés (par exemple `.ui-list`, `.media`) pour permettre une meilleure réutilisation. Les extensions des objets devraient être nommées beaucoup plus explicitement (par exemple `.user-avatar-link`). Ne vous inquiétez pas du montant ou de la taille de vos classes, gzip compresse le code bien écrit _incroyablement_ bien.
+
+  ## Classes en HTML
+
+  Dans le but de rendre les choses plus faciles à lire, séparez les classes dans
+  votre HTML avec deux (2) espaces :
+
+      <div class="foo--bar  bar__baz">
+
+  L'augmentation des espaces blancs devrait faciliter le repérage et la lecture
+  de plusieurs classes.
+
+  ## Ancres Javascript
+
+  **N'utilisez jamais une classe de _style_ CSS pour vos ancres Javascript**
+  Associer un comportement javascript à une classe de style signifie que nous ne pourrons jamais avoir l'un sans l'autre.
+
+  Si vous avez besoin de se lier un évènement à une balise, créez une classe JS dans votre CSS. Il s'agit simplement d'une classe avec un nommage `.js-`, par exemple `.js-toggle`, `.js-drag-and-drop`. Cela signifie que nous pouvons joindre les deux classes JS et CSS pour notre balisage, sans avoir de chevauchements gênants.
+
+      <th class="is-sortable  js-is-sortable">
+      </th>
+
+  Le balisage ci-dessus contient deux classes ; la première est associée au style du tableau, la deuxième à une fonction de tri.
+
+  ## Localisation
+
+  En dépit d'être un développeur britannique, je passe ma vie à écrire <i>colour</i> au lieu de <i>color</i>. Je pense que, dans un souci de cohérence, il est préférable d'utiliser toujours un anglais Américain en CSS. CSS, comme avec la plupart (sinon tous) les autres langages, est écrit en anglais-US. Mélanger une syntaxe `color: red;` avec des classes comme `.colour-picker{}` peut manquer de cohérence.
+  J'ai déjà proposé et défendu une écriture des classes bilingues,
+
+      .color-picker,
+      .colour-picker{
+      }
+
+  Cependant, après avoir récemment travaillé sur un projet de grande envergure en Sass où il y avait des dizaines de variables de couleur (par exemple `$brand-color`, `$highlight-color` etc.), maintenir deux versions de chaque variable est vite devenu ennuyeux. Cela signifie également deux fois plus de travail avec des choses comme "rechercher et remplacer".
+
+  Dans un souci de cohérence, nommez toujours vos classes et vos variables dans les paramètres régionaux de la langue que vous utilisez.
+
+  Vous pouvez aussi vous mettre d'accord avec votre équipe de développement pour n'utiliser que de l'anglais pour vos projets. Cela vous permettra d'améliorer votre maîtrise de la langue de Shakespeare.

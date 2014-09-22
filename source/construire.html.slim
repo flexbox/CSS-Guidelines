@@ -1,12 +1,10 @@
 ---
-  title: Composants CSS • Conseils et bonnes pratiques
+  title: Composants CSS
 ---
 
-.row
-  .large-3.columns
-    = partial 'views/menu'
+markdown:
+  # Construire de nouveaux composants
 
-  .large-9.columns
-    = Maruku.new(partial "views/content/construire").to_html;
+  Lors de la construction d'un nouveau composant, créez votre balisage HTML **avant** votre CSS. Cela signifie que vous pouvez voir visuellement les propriétés CSS qui héritent naturellement et ainsi éviter de ré-appliquer des styles redondants.
 
-    = partial 'views/feedback'
+  En écrivant d'abord vos balises, vous pouvez vous concentrer sur les données, le contenu et la sémantique, puis appliquer uniquement les classes appropriées et votre CSS _en dernier_.

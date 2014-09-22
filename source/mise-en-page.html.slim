@@ -1,12 +1,16 @@
 ---
-  title: Système de grille CSS • Conseils et bonnes pratiques
+  title: Système de grille CSS
 ---
 
-.row
-  .large-3.columns
-    = partial 'views/menu'
+markdown:
+  # Mise en page
 
-  .large-9.columns
-    = Maruku.new(partial "views/content/mise_en_page").to_html;
+  Tous les composants que vous créez doivent être laissés totalement libres de largeurs, ils doivent toujours rester fluides et leurs largeurs doivent être régies par un système de parent / de grille.
 
-    = partial 'views/feedback'
+  Les hauteurs ne doivent **jamais** être appliquées aux éléments. Les hauteurs ne devraient être appliquées qu'à des éléments qui avaient des dimensions _avant_ leur intégration sur le site (autrement dit les images et des sprites). Ne jamais mettre de hauteurs sur les balises `p`, `ul`, `div`, ou n'importe quoi d'autre.
+  Vous pouvez souvent obtenir l'effet désiré avec `line-height` qui est beaucoup plus souple.
+
+  Les systèmes de grilles devraient être considérées comme des étagères. Ils contiennent du contenu, mais ne sont pas du contenu eux-mêmes. Vous mettez en place vos étagères puis les remplissez avec vos objets.
+  En mettant en place nos grilles séparément de nos composants, vous pourrez les déplacer beaucoup plus facilement que s'ils avaient des dimensions associées, ce qui rend notre front-end beaucoup plus souple et rapide à utiliser.
+
+  Vous ne devriez jamais appliquer du style à un élément de la grille, ces derniers s'utilisent uniquement pour notre mise en page. Appliquez un style au contenu _à l'intérieur_ d'un élément de grille. Ne jamais, en _aucune_ circonstance, appliquer des propriétés de modèle de boîte (box-model) à un élément de grille.
