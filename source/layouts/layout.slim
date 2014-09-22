@@ -1,12 +1,11 @@
 doctype html
-html
+html lang="fr"
   head
     meta charset="utf-8"
-    meta name="viewport" content="width=device-width"
-    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-    title #{current_page.data.title}
-    meta name="description" content="#{data.settings.site.description}"
+    title #{current_page.data.title} | #{data.settings.site.title}
+    meta name="description" content="#{current_page.data.description}"
     meta name="robots" content="index,follow"
     = partial 'views/open_graph'
 
@@ -17,7 +16,7 @@ html
 
   body
     = partial "views/header"
-    = yield
+    == yield
     = partial "views/footer"
 
     = javascript_include_tag 'application'
