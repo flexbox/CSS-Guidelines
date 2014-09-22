@@ -3,21 +3,20 @@ html lang="fr"
   head
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-
     title #{current_page.data.title} | #{data.settings.site.title}
     meta name="description" content="#{current_page.data.description}"
     meta name="robots" content="index,follow"
-    = partial 'views/open_graph'
 
+    = javascript_include_tag 'application', async: 'true', defer: 'defer'
+
+    = partial 'views/open_graph'
     = partial 'views/favicon'
-    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Kreon|PT+Sans'
     = stylesheet_link_tag 'application'
-    = partial 'views/analytics_code'
 
   body
-    = partial "views/header"
-    == yield
-    = partial "views/footer"
-
-    = javascript_include_tag 'application'
-    = partial 'views/analytics_lib'
+    #js-main.m-scene
+      = partial "views/header"
+      = partial "views/global/sidebar"
+      .scene_element.scene_element--fadein
+        == yield
+      = partial "views/footer"

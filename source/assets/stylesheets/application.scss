@@ -1,22 +1,53 @@
-// Make sure the charset is set appropriately
 @charset "UTF-8";
 
-@import "compass";
+@import "google-font";
+@import "colors";
+@import "foundation/scss/foundation/functions";
+@import "custom-settings";
 
-@import "normalize";
-@import "settings";
-@import "color";
+@import "foundation/scss/normalize";
+@import "foundation/scss/foundation/components/grid";
+// @import "foundation/scss/foundation/components/accordion";
+// @import "foundation/scss/foundation/components/alert-boxes";
+@import "foundation/scss/foundation/components/block-grid";
+// @import "foundation/scss/foundation/components/breadcrumbs";
+// @import "foundation/scss/foundation/components/button-groups";
+@import "foundation/scss/foundation/components/buttons";
+// @import "foundation/scss/foundation/components/clearing";
+// @import "foundation/scss/foundation/components/dropdown";
+// @import "foundation/scss/foundation/components/dropdown-buttons";
+// @import "foundation/scss/foundation/components/flex-video";
+// @import "foundation/scss/foundation/components/forms";
+// @import "foundation/scss/foundation/components/icon-bar";
+@import "foundation/scss/foundation/components/inline-lists";
+// @import "foundation/scss/foundation/components/joyride";
+// @import "foundation/scss/foundation/components/keystrokes";
+// @import "foundation/scss/foundation/components/labels";
+// @import "foundation/scss/foundation/components/magellan";
+// @import "foundation/scss/foundation/components/orbit";
+// @import "foundation/scss/foundation/components/pagination";
+// @import "foundation/scss/foundation/components/panels";
+// @import "foundation/scss/foundation/components/pricing-tables";
+// @import "foundation/scss/foundation/components/progress-bars";
+// @import "foundation/scss/foundation/components/range-slider";
+// @import "foundation/scss/foundation/components/reveal";
+// @import "foundation/scss/foundation/components/side-nav";
+// @import "foundation/scss/foundation/components/split-buttons";
+// @import "foundation/scss/foundation/components/sub-nav";
+// @import "foundation/scss/foundation/components/switches";
+// @import "foundation/scss/foundation/components/tables";
+// @import "foundation/scss/foundation/components/tabs";
+// @import "foundation/scss/foundation/components/thumbs";
+// @import "foundation/scss/foundation/components/tooltips";
+// @import "foundation/scss/foundation/components/type";
+// @import "foundation/scss/foundation/components/top-bar";
+// @import "foundation/scss/foundation/components/offcanvas";
+// @import "foundation/scss/foundation/components/visibility";
 
-// Foundation Components
-@import
-  "foundation/global",
-  "foundation/grid",
-  "foundation/visibility",
-  "foundation/type",
-  "foundation/section",
-  "foundation/buttons",
-  "foundation/top-bar";
+@import "custom-typeplate";
+@import "typeplate-starter-kit/scss/typeplate";
 
-@import "typeplate";
-@import "theme";
-@import "module-feedback";
+@import "components/type";
+
+@import "modules/feedback";
+@import "modules/scene";

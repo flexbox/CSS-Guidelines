@@ -1,5 +1,5 @@
 $ ->
-  velocity = '500'
+  velocity = '200'
   $("a[href*=#]:not([href=#])").click ->
     if location.pathname.replace(/^\//, "") is @pathname.replace(/^\//, "") or location.hostname is @hostname
       target = $(@hash)

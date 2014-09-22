@@ -2,7 +2,7 @@ activate :navtree do |options|
   options.data_file = 'tree.yml'
   options.source_dir = 'source' # The `source` directory we want to represent in our nav tree.
   options.ignore_files = [
-    'sitemap.xml',
+    'sitemap.xml.builder',
     'robots.txt',
     'human.txt',
     'feed.xml.builder',
