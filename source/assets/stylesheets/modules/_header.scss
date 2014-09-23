@@ -1,0 +1,22 @@
+.m-header {
+  background-color: $primary-color;
+
+  position: relative;
+  padding: 4.25em 4.25em 2em;
+  max-width: 40em;
+  .header_actions {
+    margin: 1.25em 0 0;
+  }
+  .header_link {
+    margin-right: 1.25em;
+    margin-top: 4px;
+  }
+  .header_title {
+    color: $white;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .m-header {
+    padding: 8.5em 8.5em 4.25em;
+  }
+}

@@ -1,18 +1,15 @@
 ---
-  title: Introduction
-  description: En travaillant sur de grands projets fonctionnant avec des dizaines de développeurs, il est important que nous travaillions tous de façon unifiée
+  title: Guide CSS
+  description: Conseils et bonnes pratiques d'un développeur web front-end, pour créer du CSS évolutif de qualité.
+  layout: homepage
+  custom_class: m-homepage
 ---
 
 .row
-  .large-12.columns
-    h1.giga
-      'Feuilles de styles CSS
-      hr
-        span.alpha Conseils et bonnes pratiques
-
+  .large-8.large-centered.columns
+    p.drop-cap
+      'En travaillant sur de grands projets d'envergure fonctionnant avec des dizaines de développeurs, il est important que nous travaillions tous de façon unifiée avec comme objectif commun de :
     markdown:
-      En travaillant sur de grands projets d'envergure fonctionnant avec des dizaines de développeurs, il est important que nous travaillions tous de façon unifiée avec pour objectif de :
-
       * Garder les feuilles de style maintenables
       * Garder le code transparent et lisible
       * Garder les feuilles de style extensibles
@@ -21,15 +18,18 @@
 
       La première partie de ce document traitera de la syntaxe, du formatage et de la taxonomie CSS.
       La deuxième partie traitera de l'approche, l'état d'esprit et l'attitude à avoir pour écrire et architecturer du CSS.
-      Passionnant, hein?
-
+      Passionnant, hein ?
 
     .row
       .small-6.small-centered.columns
         = link_to 'Apprendre les bonnes pratiques →', '/document-css.html', class: 'button large'
 
-    div class="m-segment"
-      div class="segment_content"
-        h2 class="m-type-heading-1"
-          = link_to 'Add page transitions to your site', 'typical-implementation.html'
-        p class="segment_description" This page showcases a demo of what a typical implementation of smoothState.js might look like. It decorates page loads with a simple fade effect by using CSS animations.
+- data.summary.each_with_index do |s,i|
+  section class="m-segment"
+    article class="segment_content"
+      p.gamma.i-rounded
+        = i
+      h2
+        = link_to s.title, s.path
+      p class="segment_description"
+        = s.description

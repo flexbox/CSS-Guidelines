@@ -17,3 +17,19 @@ a {
     color: $gray;
   }
 }
+
+.m-homepage h2 a {
+  color: $primary-color;
+}
+
+.i-rounded {
+  border: 2px solid $primary-color;
+  border-radius: $global-rounded;
+  float: left;
+  width: rem-calc(60);
+  height: rem-calc(60);
+  text-align: center;
+  padding-top: rem-calc(3);
+  font-weight: $font-weight-light;
+  margin: rem-calc(20 30);
+}

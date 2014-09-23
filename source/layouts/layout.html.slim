@@ -3,7 +3,7 @@ html lang="fr"
   head
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-    title #{current_page.data.title} | #{data.settings.site.title}
+    title #{current_page.data.title} #{data.settings.site.title}
     meta name="description" content="#{current_page.data.description}"
     meta name="robots" content="index,follow"
 
@@ -13,10 +13,8 @@ html lang="fr"
     = partial 'views/favicon'
     = stylesheet_link_tag 'application'
 
-  body
+  body class="#{current_page.data.custom_class}"
     #js-main.m-scene
-      = partial "views/global/header"
-      = partial "views/global/sidebar"
-      article.m-right-panel.m-page.scene_element.scene_element--fadeinup.scene_element--fadeinright-wide
+      div.m-right-panel.m-page.scene_element.scene_element--fadeinup.scene_element--fadeinright-wide
         == yield
       = partial "views/global/footer"

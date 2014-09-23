@@ -165,10 +165,31 @@ code.highlight {
   font-weight: bold;
 }
 
+
+$code-color: $white;
+$code-font-family: $font-family-monospace;
+$code-font-weight: $font-weight-normal;
+$code-background-color: $code-bg;
+$code-border-size: 1px;
+$code-border-style: solid;
+$code-border-color: scale-color($code-background-color, $lightness: -10%);
+$code-padding: rem-calc(2) rem-calc(5) rem-calc(1);
+
+code {
+  font-family: $code-font-family;
+  font-weight: $code-font-weight;
+  color: $code-color;
+  background-color: $code-background-color;
+  border-width: $code-border-size;
+  border-style: $code-border-style;
+  border-color: $code-border-color;
+  padding: $code-padding;
+}
+
 pre {
-  color: #faf6e4;
-  background-color: $code-bg;
   padding: rem-calc(15);
   line-height: rem-calc(20);
-  font-family: 'Ubuntu Mono', 'Monaco', monospace;
+  > code {
+    display: block;
+  }
 }
