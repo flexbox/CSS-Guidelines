@@ -15,8 +15,8 @@ html lang="fr"
 
   body
     #js-main.m-scene
-      = partial "views/header"
+      = partial "views/global/header"
       = partial "views/global/sidebar"
-      .scene_element.scene_element--fadein
+      article.m-right-panel.m-page.scene_element.scene_element--fadeinup.scene_element--fadeinright-wide
         == yield
-      = partial "views/footer"
+      = partial "views/global/footer"

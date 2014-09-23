@@ -4,3 +4,16 @@ h3,
 h4,
 h5,
 h6 { font-weight: $font-weight-light; }
+
+body {
+  @media #{$small-only}{
+    font-size: rem-calc(14);
+  }
+}
+
+a {
+  @include single-transition(color, 200ms, ease-in-out);
+  &:visited:not(.button) {
+    color: $gray;
+  }
+}

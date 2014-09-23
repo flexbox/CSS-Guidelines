@@ -1,0 +1,86 @@
+.m-header {
+  position: relative;
+  padding: 4.25em 4.25em 2em;
+  max-width: 40em;
+  .header_actions {
+    margin: 1.25em 0 0;
+  }
+  .header_link {
+    margin-right: 1.25em;
+    margin-top: 4px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .m-header {
+    padding: 8.5em 8.5em 4.25em;
+  }
+}
+
+
+
+.m-segment {
+  padding: 1em 4.25em;
+  border-bottom: 1px solid #cfd8dc;
+  .segment_content {
+    margin: 16px 0;
+    max-width: 40em;
+  }
+  .segment_description {
+    margin: 16px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .m-segment {
+    padding: 2.25em 8.5em;
+  }
+}
+
+
+.m-aside-segment {
+  display: none;
+  padding: 2.25em;
+  border-bottom: 1px solid #f8bbd0;
+  .segment_description {
+    margin: 16px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .m-detail-layout {
+    padding-left: 270px;
+    .m-aside {
+      position: absolute;
+      left: 0;
+      width: 270px;
+      .aside_title {
+        position: fixed;
+      }
+    }
+  }
+}
+
+
+
+.m-right-panel .m-header,
+.m-right-panel .m-segment .segment_content {
+  max-width: 43em;
+}
+.m-right-panel .right-panel_top {
+  border-bottom: 1px solid #cfd8dc;
+}
+
+
+.m-footer {
+  background-color: #cfd8dc;
+}
+
+.m-image-grid {
+  overflow: hidden;
+  list-style: none;
+  padding-left: 0;
+  .item {
+    display: block;
+    float: left;
+    width: 33%;
+    overflow: hidden;
+  }
+}

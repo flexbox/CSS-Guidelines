@@ -7,21 +7,23 @@ markdown:
 
   J'utilise un style de commentaire docBlock où la taille est limitée à 80 caractères :
 
-      /**
-       * Ceci est un commentaire de style DocBlock
-       *
-       * Ceci est une description plus détaillée
-       * Nous limitons ces lignes pour un maximum de 80 caractères.
-       *
-       * Nous pouvons avoir des balises dans les commentaires :
-       *
-         <div class=foo>
-             <p>Lorem</p>
-         </div>
-       *
-       * Nous n'avons pas de préfixe avec une étoile pour faciliter le
-       * copier-coller.
-       */
+  ~~~ html
+  /**
+   * Ceci est un commentaire de style DocBlock
+   *
+   * Ceci est une description plus détaillée
+   * Nous limitons ces lignes pour un maximum de 80 caractères.
+   *
+   * Nous pouvons avoir des balises dans les commentaires :
+   *
+     <div class=foo>
+         <p>Lorem</p>
+     </div>
+   *
+   * Nous n'avons pas de préfixe avec une étoile pour faciliter le
+   * copier-coller.
+   */
+  ~~~
 
   Vous devez documenter et commenter votre code autant que vous le pouvez, quoi qu'il arrive. Cela peut sembler trop transparent ou explicite pour vous mais peut-être pas pour un autre dev. Chaque nouveau morceau de code doit-être documenté.
 
@@ -42,15 +44,19 @@ markdown:
 
   Par quasi-qualification de ce sélecteur (autrement dit en commentant le sélecteur de premier plan), nous pouvons communiquer nos intentions pour cette classe :
 
-      /*html*/.product-page{}
+  ~~~ html
+  /*html*/ .product-page {}
+  ~~~
 
   Nous pouvons maintenant voir exactement où s'applique cette classe, sans avoir les inconvénients de la la spécificité ou de la non-réutilisation.
 
   D'autres exemples pourraient être: :
 
-      /*ol*/.breadcrumb{}
-      /*p*/.intro{}
-      /*ul*/.image-thumbs{}
+  ~~~ html
+  /*ol*/ .breadcrumb {}
+  /*p*/ .intro {}
+  /*ul*/ .image-thumbs {}
+  ~~~
 
   Dans ces cas, nous savons le contexte d'utilisation de ces classes sans jamais impacter la spécificité des sélecteurs
 
@@ -58,15 +64,17 @@ markdown:
 
   Si vous écrivez un nouveau composant, laissez certaines balises relatives à son utilisation dans un commentaire ci-dessus, par exemple:
 
-      /**
-       * ^navigation ^lists
-       */
-      .nav{}
+  ~~~ html
+  /**
+   * ^navigation ^lists
+   */
+  .nav {}
 
-      /**
-       * ^grids ^lists ^tables
-       */
-      .matrix{}
+  /**
+   * ^grids ^lists ^tables
+   */
+  .matrix {}
+  ~~~
 
   Ces balises permettent à d'autres développeurs de trouver des bouts de code en recherchant une fonction, si un développeur a besoin pour travailler avec des listes ils peuvent rechercher `^lists` et trouver les objets associés `.nav` et `.matrix` (et probablement plus).
 
@@ -81,16 +89,20 @@ markdown:
 
   Dans votre feuille de style de base :
 
-      /**
-       * Extend `.foo` in theme.css
-       */
-       .foo{}
+  ~~~ html
+  /**
+   * Extend `.foo` in theme.css
+   */
+   .foo {}
+  ~~~ html
 
   Dans votre feuille de style de thème :
 
-      /**
-       * Extends `.foo` in base.css
-       */
-       .bar{}
+  ~~~ html
+  /**
+   * Extends `.foo` in base.css
+   */
+   .bar {}
+  ~~~
 
   Ici, nous avons établi une relation concrète entre deux morceaux de code très distincts.

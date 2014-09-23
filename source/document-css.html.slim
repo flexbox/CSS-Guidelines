@@ -25,14 +25,16 @@ markdown:
 
   Au sommet des feuilles de style, je maintiens une table des matières qui détaillera les sections contenues dans le document, par exemple :
 
-      /*------------------------------------*\
-          $CONTENU
-      \*------------------------------------*/
-      /**
-       * CONTENU.............Vous êtes en train de le lire
-       * RESET...............Réinitialisation des styles par défaut
-       * FONT................Les polices de caractère
-       */
+  ~~~ css
+  /*------------------------------------*\
+      $CONTENU
+  \*------------------------------------*/
+  /**
+   * CONTENU.............Vous êtes en train de le lire
+   * RESET...............Réinitialisation des styles par défaut
+   * FONT................Les polices de caractère
+   */
+  ~~~
 
   Ceci va permettre au prochain développeur de savoir exactement ce qu'il va trouver dans ce fichier. Chaque élément de la table des matières correspond directement à un titre de section.
 
@@ -43,28 +45,32 @@ markdown:
   La table des matières n'est d'aucune utilité si elle ne possède pas de section
   correspondante. Les sections sont désignées ainsi :
 
-      /*------------------------------------*\
-          $RESET
-      \*------------------------------------*/
+  ~~~ css
+  /*------------------------------------*\
+      $RESET
+  \*------------------------------------*/
+  ~~~
 
   Le préfixe `$` dans une section permet de faire une recherche rapide ([Cmd|Ctrl]+F ou ([Ctrl|Shift]+F))
 
   Si vous travaillez dans une grande feuille de style, laissez cinq (5) retours chariot entre chaque section, comme ceci :
 
-      /*------------------------------------*\
-          $RESET
-      \*------------------------------------*/
-      [Vos
-      styles
-      par défaut]
+  ~~~ css
+  /*------------------------------------*\
+      $RESET
+  \*------------------------------------*/
+  [Vos
+  styles
+  par défaut]
 
 
 
 
 
-      /*------------------------------------*\
-          $FONT
-      \*------------------------------------*/
+  /*------------------------------------*\
+      $FONT
+  \*------------------------------------*/
+  ~~~
 
   Ce gros morceau d'espaces est rapidement perceptible lorsque vous faites défiler des fichiers plus volumineux.
 

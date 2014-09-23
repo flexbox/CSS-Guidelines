@@ -7,10 +7,10 @@ markdown:
 
   Au lieu d'utiliser les sélecteurs pour cibler un élément du DOM, il est souvent
   préférable de mettre une classe sur l'élément que vous voulez explicitement styler.
-  Prenons l'exemple précis d'un sélecteur comme `.header ul{}` ...
+  Prenons l'exemple précis d'un sélecteur comme `.header ul {}` ...
 
   Imaginons que `ul` est en effet le menu principal de notre site Web. il vit dans
-  l'en-tête et vous pensez que se sera le seul `ul` en ces lieux ; `.header ul{}` fonctionnera, mais ce n'est pas idéal ou souhaitable.
+  l'en-tête et vous pensez que se sera le seul `ul` en ces lieux ; `.header ul {}` fonctionnera, mais ce n'est pas idéal ou souhaitable.
   Ce n'est pas à l'épreuve du temps et certainement pas assez explicite. Dès que nous ajouterons un autre `ul` pour cet en-tête il va adopter le style de notre navigation principale.
   Il y a beaucoup de chances que ce ne soit pas voulu. Cela signifie que nous devons soit remanier une grande quantité de code _ou_ annuler beaucoup de styles sur les `ul`s dans ce `.header` pour supprimer les effets de la sélection globale.
 
@@ -21,7 +21,7 @@ markdown:
 
   Assurez-vous que votre sélecteur clé n'est jamais un élément / type ou
   une classe abstraite. Vous ne voulez pas vraiment voir comme sélecteurs
-  `.sidebar ul{}` ou `.footer .media{}` dans votre feuille de thème.
+  `.sidebar ul {}` ou `.footer .media {}` dans votre feuille de thème.
 
   Soyez explicites ; ciblez l'élément que vous voulez modifier, pas son parent. Ne supposez jamais que le balisage ne changera pas. **Codez des sélecteurs qui ciblent ce que vous voulez, pas ce qui se trouve être déjà là.**
 

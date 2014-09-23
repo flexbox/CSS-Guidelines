@@ -8,7 +8,7 @@ markdown:
   Gardez les sélecteurs courts, efficaces et portables.
 
   Les sélecteurs basés sur la position sont mauvais pour un certain nombre de raisons.
-  Par exemple, prenez `.sidebar h3 span{}`. Ce sélecteur est trop basé sur la position et donc ne nous permet pas de déplacer un `span` en dehors d'un `h3` sans casser le style.
+  Par exemple, prenez `.sidebar h3 span {}`. Ce sélecteur est trop basé sur la position et donc ne nous permet pas de déplacer un `span` en dehors d'un `h3` sans casser le style.
 
   Les sélecteurs trop longs introduisent également des problèmes de performance ; plus il y a de niveau dans un sélecteur (par exemple `.sidebar h3 span` a trois niveaux, `.content ul p a` en a quatre), plus le navigateur a de traitements à effectuer.
 
@@ -27,8 +27,8 @@ markdown:
   `.error {color: red;}` et `div.error {padding: 14px;}`). Généralement, essayez
   d'éviter lorsque cela est possible.
 
-  Un autre exemple d'un sélecteur sur-qualifié pourrait être `ul.nav li a {}`. Comme ci-dessus, nous pouvons supprimer `ul` puisque nous savons que `.nav` est une liste, il est aussi logique que `a` _doit_ être dans un `li`, donc nous mettre à la diète `ul.nav li a {}` pour obtenir simplement `.nav a{}`.
+  Un autre exemple d'un sélecteur sur-qualifié pourrait être `ul.nav li a {}`. Comme ci-dessus, nous pouvons supprimer `ul` puisque nous savons que `.nav` est une liste, il est aussi logique que `a` _doit_ être dans un `li`, donc nous mettre à la diète `ul.nav li a {}` pour obtenir simplement `.nav a {}`.
 
   ## Performance des sélecteurs
 
-  S'il est vrai que les navigateurs ne pourront pas continuer à interpréter encore plus rapidement le CSS, l'efficacité est quelque chose que vous pourriez garder en tête. En résumé, évitez les sélecteurs non imbriquées, l'universel (`*{}`), ainsi que les sélecteurs CSS3 plus complexes devraient permettre de contourner ces problèmes.
+  S'il est vrai que les navigateurs ne pourront pas continuer à interpréter encore plus rapidement le CSS, l'efficacité est quelque chose que vous pourriez garder en tête. En résumé, évitez les sélecteurs non imbriquées, l'universel (`* {}`), ainsi que les sélecteurs CSS3 plus complexes devraient permettre de contourner ces problèmes.

@@ -5,9 +5,10 @@
 
 .row
   .large-12.columns
-    h1.giga Feuilles de styles CSS
-    hr
-    h2.alpha Conseils et bonnes pratiques
+    h1.giga
+      'Feuilles de styles CSS
+      hr
+        span.alpha Conseils et bonnes pratiques
 
     markdown:
       En travaillant sur de grands projets d'envergure fonctionnant avec des dizaines de développeurs, il est important que nous travaillions tous de façon unifiée avec pour objectif de :
@@ -24,5 +25,11 @@
 
 
     .row
-      .small-4.small-centered.columns
-        = link_to 'Commencer la lecture &rtrif;', '/document-css.html', class: 'button large'
+      .small-6.small-centered.columns
+        = link_to 'Apprendre les bonnes pratiques →', '/document-css.html', class: 'button large'
+
+    div class="m-segment"
+      div class="segment_content"
+        h2 class="m-type-heading-1"
+          = link_to 'Add page transitions to your site', 'typical-implementation.html'
+        p class="segment_description" This page showcases a demo of what a typical implementation of smoothState.js might look like. It decorates page loads with a simple fade effect by using CSS animations.

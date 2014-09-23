@@ -1,15 +1,15 @@
 (($) ->
-  "use strict"
-  $body = $("html, body")
-  content = $("#main").smoothState(
+  'use strict'
+  $body = $('html, body')
+  content = $('#main').smoothState(
     prefetch: true,
     pageCacheSize: 4,
     onStart:
-      duration: 250
+      duration: 200
       render: (url, $container) ->
-        content.toggleAnimationClass "is-exiting"
+        content.toggleAnimationClass 'is-exiting'
         $body.animate scrollTop: 0
         return
-  ).data("smoothState")
+  ).data('smoothState')
   return
 ) jQuery
