@@ -25,6 +25,7 @@ end
 
 activate :gzip
 activate :livereload
+activate :syntax
 activate :autoprefixer,
   browsers: ['last 2 versions', 'ie 8', 'ie 9']
 
@@ -50,4 +51,6 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
   activate :favicon_maker
+
+  activate :sitemap, :hostname => data.settings.site.url
 end

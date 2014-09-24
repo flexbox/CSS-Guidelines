@@ -15,6 +15,5 @@ html lang="fr"
 
   body class="#{current_page.data.custom_class}"
     #js-main.m-scene
-      div.m-right-panel.m-page.scene_element.scene_element--fadeinup.scene_element--fadeinright-wide
-        == yield
+      == yield
       = partial "views/global/footer"

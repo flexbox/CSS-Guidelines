@@ -1,4 +1,6 @@
 .m-segment {
+  background-color: $white;
+
   padding: 1em 4.25em;
   border-bottom: 1px solid #cfd8dc;
   .segment_content {
@@ -38,7 +40,13 @@
   }
 }
 
+.m-page {
+  background-color: $white;
+}
 
+.m-aside {
+  background-color: $primary-color;
+}
 
 .m-right-panel .m-header,
 .m-right-panel .m-segment .segment_content {
@@ -49,8 +57,30 @@
 }
 
 
+.m-detail-layout .m-aside .aside_title {
+  margin: 16px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .m-detail-layout {
+    padding-left: 270px; }
+    .m-detail-layout .m-aside {
+      position: absolute;
+      left: 0;
+      width: 270px; }
+      .m-detail-layout .m-aside .aside_title {
+        position: fixed; }
+      .m-detail-layout .m-aside .m-button {
+        display: block; }
+}
+
+
 .m-footer {
   background-color: $black;
+  p {
+    color: $gray;
+  }
 }
 
 .m-image-grid {

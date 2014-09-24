@@ -7,12 +7,12 @@
 markdown:
   # Sélecteurs
 
-  Gardez les sélecteurs courts, efficaces et portables.
+  Conservez des sélecteurs courts, efficaces et évolutifs.
 
-  Les sélecteurs basés sur la position sont mauvais pour un certain nombre de raisons.
+  Les sélecteurs basés sur l'architecture du DOM sont mauvais pour un certain nombre de raisons.
   Par exemple, prenez `.sidebar h3 span {}`. Ce sélecteur est trop basé sur la position et donc ne nous permet pas de déplacer un `span` en dehors d'un `h3` sans casser le style.
 
-  Les sélecteurs trop longs introduisent également des problèmes de performance ; plus il y a de niveau dans un sélecteur (par exemple `.sidebar h3 span` a trois niveaux, `.content ul p a` en a quatre), plus le navigateur a de traitements à effectuer.
+  Les sélecteurs trop longs introduisent également des problèmes de performance; plus il y a de niveau dans un sélecteur (par exemple `.sidebar h3 span {}` a trois niveaux, `.content ul p a {}` en a quatre), plus le navigateur a de traitements à effectuer.
 
   Assurez-vous que les styles soient indépendants de la position lorsque cela est possible, et assurez-vous qu'ils soient simples et courts.
 

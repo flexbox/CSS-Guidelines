@@ -14,4 +14,3 @@ gem 'middleman-navtree'
 gem 'middleman-google-analytics'
 
 gem 'slim',                   '~> 2.0.0'
-gem 'builder',                '~> 3.0'

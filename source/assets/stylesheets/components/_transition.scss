@@ -31,12 +31,6 @@
   }
 }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-
 @media screen and (min-width: 768px) {
   .m-scene .scene_element--fadeinright-wide {
     animation-name: fadeInRight;

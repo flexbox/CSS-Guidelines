@@ -1,6 +1,6 @@
 ---
   title: Conventions CSS
-  description:
+  description: Comment rendre le code plus facile et rapide à lire avec moins d'efforts ?
   layout: article
 ---
 
@@ -8,7 +8,7 @@ markdown:
   # Convention de nommage
 
   La plupart du temps, j'utilise simplement des classes délimités par des traits
-  d'union (ex. `.Foo-bar`, pas `.foo_bar` ou `.FooBar`), mais dans certaines
+  d'union (ex. `.foo-bar`, pas `.foo_bar` ou `.FooBar`), mais dans certaines
   circonstances, j'utilise la notation BEM (Block, Élément, Modifieur).
 
   <abbr title="Block, Element, Modifier">BEM</abbr> est une méthode pour nommer et classifier vos sélecteurs CSS de façon à les rendre beaucoup plus strict, transparent et informatif.
@@ -35,7 +35,7 @@ markdown:
     .personne__main--droite {}
   ~~~
 
-  Ici, nous pouvons voir que l'objet de base que nous décrivons est une personne, et qu'un autre type de personne pourrait être une femme. Nous pouvons également voir que les gens ont des mains, ce sont des sous-parties des personnes, et il y a différentes variantes, comme main gauche et main droite.
+  Ici, nous pouvons voir que l'objet de base que nous décrivons est une personne, et qu'un autre type de personne pourrait être une femme. Nous pouvons également voir que les gens ont des mains, qui sont des sous-parties des personnes, et il y a différentes variantes, comme main gauche et main droite.
 
   Nous pouvons maintenant nommer nos sélectionneurs en fonction de leurs objets de base et nous pouvons également savoir ce que le sélecteur fait, est-il un sous-composant (`__`) ou une variation (`--`)?
 
@@ -62,7 +62,7 @@ markdown:
 
   ## Ancres Javascript
 
-  **N'utilisez jamais une classe de _style_ CSS pour vos ancres Javascript**
+  **N'utilisez jamais une classe de _style_ CSS pour vos ancres JavaScript**
   Associer un comportement javascript à une classe de style signifie que nous ne pourrons jamais avoir l'un sans l'autre.
 
   Si vous avez besoin de lier un évènement à une balise, créez une classe JS dans votre CSS. Il s'agit simplement d'une classe avec un nommage `.js-`, par exemple `.js-toggle`, `.js-drag-and-drop`. Cela signifie que nous pouvons joindre les deux classes JS et CSS pour notre balisage, sans avoir de chevauchements gênants.
@@ -76,8 +76,9 @@ markdown:
 
   ## Localisation
 
-  En dépit d'être un développeur britannique, je passe ma vie à écrire _colour_ au lieu de _color_. Je pense que, dans un souci de cohérence, il est préférable d'utiliser toujours un anglais Américain en CSS. CSS, comme avec la plupart (sinon tous) les autres langages, est écrit en anglais-US. Mélanger une syntaxe `color: red;` avec des classes comme `.colour-picker {}` peut manquer de cohérence.
-  J'ai déjà proposé et défendu une écriture des classes bilingues,
+  J'ai pris l'habitude d'écrire mon code intégralement en anglais.
+  En dépit d'être un développeur français, je passe ma vie à écrire _colour_ au lieu de _color_. Je pense que, dans un souci de cohérence, il est préférable d'utiliser toujours un anglais Américain en CSS. CSS, comme avec la plupart (sinon tous) les autres langages, est écrit en anglais-US. Mélanger une syntaxe `color: red;` avec des classes comme `.colour-picker {}` peut manquer de cohérence.
+  J'ai déjà proposé et défendu une écriture des classes bilingues.
 
   ~~~ html
   .color-picker,

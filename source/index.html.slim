@@ -5,7 +5,7 @@
   custom_class: m-homepage
 ---
 
-.row
+.row.m-intro
   .large-8.large-centered.columns
     p.drop-cap
       'En travaillant sur de grands projets d'envergure fonctionnant avec des dizaines de développeurs, il est important que nous travaillions tous de façon unifiée avec comme objectif commun de :
@@ -19,10 +19,6 @@
       La première partie de ce document traitera de la syntaxe, du formatage et de la taxonomie CSS.
       La deuxième partie traitera de l'approche, l'état d'esprit et l'attitude à avoir pour écrire et architecturer du CSS.
       Passionnant, hein ?
-
-    .row
-      .small-6.small-centered.columns
-        = link_to 'Apprendre les bonnes pratiques →', '/document-css.html', class: 'button large'
 
 - data.summary.each_with_index do |s,i|
   section class="m-segment"

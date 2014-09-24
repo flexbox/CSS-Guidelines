@@ -1,3 +1,7 @@
 = wrap_layout :layout do
-  = partial "views/global/sidebar"
-  == yield
+  .m-detail-layout
+    = partial "views/global/sidebar"
+    .m-right-panel.m-page.scene_element.scene_element--fadeinup.scene_element--fadeinright-wide
+      .m-segment
+        small = link_to 'Accueil →', '/'
+        == yield

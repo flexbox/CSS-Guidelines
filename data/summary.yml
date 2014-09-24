@@ -3,15 +3,15 @@
   description: description
   path: "/anatomie-regle.html"
 -
-  title: "Commentaires en CSS"
+  title: "Commentaires"
   description: description
   path: "/commentaires.html"
 -
-  title: "Composants CSS"
+  title: "Composants"
   description: description
   path: "/construire.html"
 -
-  title: "Conventions CSS"
+  title: "Conventions de nommage"
   description: description
   path: "/convention.html"
 -
@@ -23,7 +23,7 @@
   description: description
   path: "/debugage.html"
 -
-  title: "Document CSS"
+  title: "Architecture du CSS"
   description: description
   path: "/document-css.html"
 -
@@ -31,27 +31,27 @@
   description: description
   path: "/ecrire-css.html"
 -
-  title: "Spécificité des ID en CSS"
+  title: "Spécificité des ID"
   description: description
   path: "/id.html"
 -
-  title: "CSS !important"
+  title: "La propriété !important"
   description: description
   path: "/important.html"
 -
-  title: "Système de grille CSS"
+  title: "Système de grille"
   description: description
   path: "/mise-en-page.html"
 -
-  title: "Nombres magiques CSS"
+  title: "Nombres magiques"
   description: description
   path: "/nombres-magiques.html"
 -
-  title: "Spécificité du CSS"
+  title: "Les styles en cascade"
   description: description
   path: "/ordre.html"
 -
-  title: "Raccourcis CSS"
+  title: "Raccourcis de décalration"
   description: description
   path: "/raccourcis.html"
 -
@@ -67,7 +67,7 @@
   description: description
   path: "/selection-css.html"
 -
-  title: "Styles conditionnels CSS"
+  title: "Styles conditionnels"
   description: description
   path: "/style.html"
 -

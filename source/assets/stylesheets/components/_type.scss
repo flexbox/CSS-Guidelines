@@ -13,13 +13,14 @@ body {
 
 a {
   @include single-transition(color, 200ms, ease-in-out);
-  &:visited:not(.button) {
-    color: $gray;
-  }
+  text-decoration: none;
+  color: $secondary-color;
 }
 
 .m-homepage h2 a {
-  color: $primary-color;
+  &:visited:not(.button) {
+    color: $gray;
+  }
 }
 
 .i-rounded {
