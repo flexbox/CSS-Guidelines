@@ -184,6 +184,7 @@ code {
   border-style: $code-border-style;
   border-color: $code-border-color;
   padding: $code-padding;
+  white-space: inherit;
 }
 
 pre {

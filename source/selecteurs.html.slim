@@ -12,21 +12,22 @@ markdown:
   Les sélecteurs basés sur l'architecture du DOM sont mauvais pour un certain nombre de raisons.
   Par exemple, prenez `.sidebar h3 span {}`. Ce sélecteur est trop basé sur la position et donc ne nous permet pas de déplacer un `span` en dehors d'un `h3` sans casser le style.
 
-  Les sélecteurs trop longs introduisent également des problèmes de performance; plus il y a de niveau dans un sélecteur (par exemple `.sidebar h3 span {}` a trois niveaux, `.content ul p a {}` en a quatre), plus le navigateur a de traitements à effectuer.
+  Les sélecteurs trop longs introduisent également des problèmes de performance; plus il y a de niveaux dans un sélecteur (par exemple `.sidebar h3 span {}` a trois niveaux, `.content ul p a {}` en a quatre), plus le navigateur a de traitements à effectuer.
 
   Assurez-vous que les styles soient indépendants de la position lorsque cela est possible, et assurez-vous qu'ils soient simples et courts.
 
   Les sélecteurs doivent être courts (par exemple, un niveau d'une classe de profondeur) mais les noms de classe eux-mêmes devraient être aussi longs que possible. Une classe `.user-avatar` est bien plus agréable que `.usr-avt`.
 
+  <br>
   **Rappelez-vous :** les classes ne sont ni sémantiques ni non-sémantiques !
-  Arrêter de stresser sur les noms de classe « sémantique » et choisissez quelque chose de simple à l'épreuve du temps.
+  Arrêtez de stresser sur les noms de classe « sémantique » et choisissez quelque chose de simple à l'épreuve du temps.
 
   ## Sur-qualification des sélecteurs
 
   Comme indiqué plus haut, les chaînes de sélecteurs sont de mauvaises nouvelles.
 
   Une sur-qualification des sélecteurs ressemble à `div.promo`. Vous obtiendrez sûrement le même résultat en utilisant simplement `.promo`. Bien sûr, dans certains cas vous _voulez_ associer une classe avec un élément. Exemple : vous avez une classe générique `.error` qui a besoin d'avoir un aspect différent en fonction de son élément (par exemple,
-  `.error {color: red;}` et `div.error {padding: 14px;}`). Généralement, essayez
+  `.error { color: red; }` et `div.error { padding: 14px; }`). Généralement, essayez
   d'éviter lorsque cela est possible.
 
   Un autre exemple d'un sélecteur sur-qualifié pourrait être `ul.nav li a {}`. Comme ci-dessus, nous pouvons supprimer `ul` puisque nous savons que `.nav` est une liste, il est aussi logique que `a` _doit_ être dans un `li`, donc nous mettre à la diète `ul.nav li a {}` pour obtenir simplement `.nav a {}`.

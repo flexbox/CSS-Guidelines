@@ -1,66 +1,62 @@
 -
-  title: "Anatomie d'une règle CSS"
-  description: description
+  title: "Anatomie d'une règle"
+  description: "Comment normaliser l'écriture de ses feuilles de styles ?"
   path: "/anatomie-regle.html"
 -
   title: "Commentaires"
-  description: description
+  description: "Style d'écriture des commentaires."
   path: "/commentaires.html"
 -
   title: "Composants"
-  description: description
+  description: "Quel est l'odre pour construire du CSS : avant ou après le HTML ?"
   path: "/construire.html"
 -
   title: "Conventions de nommage"
-  description: description
+  description: "Pourquoi vous devez avoir des conventions si vous travaillez en équipe."
   path: "/convention.html"
 -
   title: "CSS Orienté Objet"
-  description: description
+  description: "Séparer ses composants en objets et extentions."
   path: "/cssoo.html"
 -
   title: "Débugage CSS"
-  description: description
+  description: "Comment corriger les erreurs de mise en page ?"
   path: "/debugage.html"
 -
   title: "Architecture du CSS"
-  description: description
+  description: "La cohérence des commentaires, de la syntaxe et des règles de nommage est importante."
   path: "/document-css.html"
 -
-  title: "Ecrire du CSS"
-  description: description
-  path: "/ecrire-css.html"
--
   title: "Spécificité des ID"
-  description: description
+  description: "Les identifiants #id en CSS."
   path: "/id.html"
 -
   title: "La propriété !important"
-  description: description
+  description: "Attention à ne pas abuser de cette déclaration."
   path: "/important.html"
 -
   title: "Système de grille"
-  description: description
+  description: "Les fondations de votre mise en page."
   path: "/mise-en-page.html"
 -
   title: "Nombres magiques"
-  description: description
+  description: "Les nombres magiques ont plusieurs problèmes qui leur sont associés."
   path: "/nombres-magiques.html"
 -
   title: "Les styles en cascade"
-  description: description
+  description: Stylez vos éléments en respectant un design atomique.
   path: "/ordre.html"
 -
   title: "Raccourcis de décalration"
-  description: description
+  description: "Coder rapidement ne fait pas forcément gagner du temps."
   path: "/raccourcis.html"
 -
   title: "Pré-processeurs Sass"
-  description: description
+  description: "Un grand pouvoir implique de grandes responsabilités."
   path: "/sass.html"
 -
   title: "Sélecteurs CSS"
-  description: description
+  description: Conservez un système les plus indépendant possible de votre HTML.
   path: "/selecteurs.html"
 -
   title: "Sélection CSS"

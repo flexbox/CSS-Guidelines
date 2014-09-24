@@ -18,7 +18,7 @@ markdown:
    *
    * Nous pouvons avoir des balises dans les commentaires :
    *
-     <div class=foo>
+     <div class="foo">
          <p>Lorem</p>
      </div>
    *
@@ -27,7 +27,7 @@ markdown:
    */
   ~~~
 
-  Vous devez documenter et commenter votre code autant que vous le pouvez, quoi qu'il arrive. Cela peut sembler trop transparent ou explicite pour vous mais peut-être pas pour un autre dev. Chaque nouveau morceau de code doit-être documenté.
+  Vous devez documenter et commenter votre code autant que vous le pouvez, quoi qu'il arrive. Cela peut sembler trop transparent ou explicite pour vous mais peut-être pas pour un autre développeur. Chaque nouveau morceau de code doit-être documenté.
 
   ## Commentaires sous stéroïdes
 
@@ -39,9 +39,9 @@ markdown:
 
   ## Sélecteurs spécifiques
 
-  Vous ne devriez jamais qualifier vos sélecteurs, c'est-à-dire que nous ne devrions jamais écrire `ul.nav{}` si vous pouvez juste avoir `.nav`. Qualifier vos sélecteurs diminue leur rendement, inhibe le potentiel de réutilisation d'un objet sur un autre type d'élément et augmente la spécificité du sélecteur. Ce sont toutes des choses qui doivent être évitées à tout prix.
+  Vous ne devriez jamais qualifier vos sélecteurs, c'est-à-dire que nous ne devrions jamais écrire `ul.nav {}` si vous pouvez juste avoir `.nav`. Qualifier vos sélecteurs diminue leur rendement, inhibe le potentiel de réutilisation d'un objet sur un autre type d'élément et augmente la spécificité du sélecteur. Ce sont toutes des choses qui doivent être évitées à tout prix.
 
-  Cependant, il est parfois utile de communiquer à d'autre(s) développeur(s) où
+  Cependant, il est parfois utile de communiquer à d'autres développeurs où
   vous avez l'intention d'utiliser une classe. Prenons `.product-page` par exemple, cette classe sonne comme si elle était utilisée sur un conteneur de haut niveau, peut-être avec `html` ou `body`, mais seulement avec `.product-page` il est impossible de le savoir.
 
   Par quasi-qualification de ce sélecteur (autrement dit en commentant le sélecteur de premier plan), nous pouvons communiquer nos intentions pour cette classe :
@@ -56,7 +56,7 @@ markdown:
 
   ~~~ html
   /*ol*/ .breadcrumb {}
-  /*p*/ .intro {}
+  /*p*/  .intro {}
   /*ul*/ .image-thumbs {}
   ~~~
 
