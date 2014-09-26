@@ -58,6 +58,13 @@
 .m-right-panel .right-panel_top {
   border-bottom: 1px solid #cfd8dc;
 }
+.m-right-panel {
+  .m-segment {
+    @media #{$small-only}{
+      padding: 1em 2em;
+    }
+  }
+}
 
 
 .m-detail-layout .m-aside .aside_title {
@@ -73,11 +80,14 @@
   .m-detail-layout .m-aside {
     position: absolute;
     left: 0;
-    width: 270px; }
-    .m-detail-layout .m-aside .aside_title {
-      position: fixed; }
-    .m-detail-layout .m-aside .m-button {
-      display: block; }
+    width: 270px;
+  }
+  .m-detail-layout .m-aside .aside_title {
+    position: fixed;
+  }
+  .m-detail-layout .m-aside .m-button {
+    display: block;
+  }
 }
 
 
