@@ -1,0 +1,72 @@
+-
+  title: "Architecture du CSS"
+  description: "La cohérence des commentaires, de la syntaxe et des règles de nommage est importante."
+  path: "/document-css.html"
+-
+  title: "Les styles en cascade"
+  description: Stylez vos éléments en respectant un design atomique.
+  path: "/ordre.html"
+-
+  title: "Anatomie d'une règle"
+  description: "Comment normaliser l'écriture de ses feuilles de styles ?"
+  path: "/anatomie-regle.html"
+-
+  title: "Conventions de nommage"
+  description: "Pourquoi vous devez avoir des conventions si vous travaillez en équipe."
+  path: "/convention.html"
+-
+  title: "Commentaires"
+  description: "Style d'écriture des commentaires."
+  path: "/commentaires.html"
+-
+  title: "Composants"
+  description: "Quel est l'odre pour construire du CSS : avant ou après le HTML ?"
+  path: "/construire.html"
+-
+  title: "CSS Orienté Objet"
+  description: "Séparer ses composants en objets et extentions."
+  path: "/cssoo.html"
+-
+  title: "Système de grille"
+  description: "Les fondations de votre mise en page."
+  path: "/mise-en-page.html"
+-
+  title: "Système de grille"
+  description: Ajustez vos composants en fonction de la taille des écrans.
+  path: "/taille-interface.html"
+-
+  title: "Raccourcis de décalration"
+  description: "Coder rapidement ne fait pas forcément gagner du temps."
+  path: "/raccourcis.html"
+-
+  title: "Spécificité des ID"
+  description: "Les identifiants #id en CSS."
+  path: "/id.html"
+-
+  title: "Sélecteurs CSS"
+  description: Conservez un système les plus indépendant possible de votre HTML.
+  path: "/selecteurs.html"
+-
+  title: "L'intention de sélection"
+  description: Évitez de parcourir inutilement l'arbre du DOM.
+  path: "/selection-css.html"
+-
+  title: "La propriété !important"
+  description: "Attention à ne pas abuser de cette déclaration."
+  path: "/important.html"
+-
+  title: "Nombres magiques"
+  description: "Les nombres magiques ont plusieurs problèmes qui leur sont associés."
+  path: "/nombres-magiques.html"
+-
+  title: "Styles conditionnels"
+  description: Créer une feuille de style par navigateur n'a aps forcément de sens.
+  path: "/style.html"
+-
+  title: "Débugage CSS"
+  description: "Comment corriger les erreurs de mise en page ?"
+  path: "/debugage.html"
+-
+  title: "Pré-processeurs Sass"
+  description: "Un grand pouvoir implique de grandes responsabilités."
+  path: "/sass.html"

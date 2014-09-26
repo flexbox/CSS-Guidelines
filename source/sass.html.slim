@@ -1,12 +1,40 @@
 ---
-  title: Sass • Conseils et bonnes pratiques
+  title: Pré-processeurs Sass
+  description: "Comment éviter la spécificité des déclarations en Sass ?"
+  layout: article
 ---
 
-.row
-  .large-3.columns
-    = partial 'views/menu'
+markdown:
+  # Pré-processeurs
 
-  .large-9.columns
-    = Maruku.new(partial "views/content/sass").to_html;
+  [Sass](http://sass-lang.com/) est mon pré-processeur préféré. **Utilisez-le à bon escient.** Utilisez Sass pour rendre votre CSS plus puissant, mais évitez la spécification comme la peste !
+  Spécifiez seulement si cela est réellement nécessaire à votre CSS, par exemple :
 
-    = partial 'views/feedback'
+  ~~~ scss
+  .header {}
+  .header .site-nav {}
+  .header .site-nav li {}
+  .header .site-nav li a {}
+  ~~~
+
+  Serait tout à fait inutile dans des conditions normales CSS, le SASS est **mauvais** :
+
+  ~~~ scss
+  .header {
+    .site-nav {
+      li {
+        a {}
+      }
+    }
+  }
+  ~~~
+
+  Si vous devez mettre SASS en place cette solution est bien meilleure :
+
+  ~~~ scss
+  .header {}
+  .site-nav {
+    li {}
+    a {}
+  }
+  ~~~

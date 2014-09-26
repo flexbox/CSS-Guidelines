@@ -1,22 +1,24 @@
-// Make sure the charset is set appropriately
 @charset "UTF-8";
 
-@import "compass";
+@import "google-font";
+@import "colors";
+@import "foundation/scss/foundation/functions";
+@import "custom-settings";
 
-@import "normalize";
-@import "settings";
-@import "color";
+@import "foundation/scss/normalize";
+@import "foundation/scss/foundation/components/grid";
+@import "foundation/scss/foundation/components/buttons";
 
-// Foundation Components
-@import
-  "foundation/global",
-  "foundation/grid",
-  "foundation/visibility",
-  "foundation/type",
-  "foundation/section",
-  "foundation/buttons",
-  "foundation/top-bar";
+@import "custom-typeplate";
+@import "typeplate-starter-kit/scss/typeplate";
+@import "animate.css/source/fading_entrances/fadeIn";
+@import "animate.css/source/fading_entrances/fadeInUp";
+@import "animate.css/source/fading_entrances/fadeInRight";
 
-@import "typeplate";
-@import "theme";
-@import "module-feedback";
+@import "components/type";
+@import "components/code";
+@import "components/transition";
+
+@import "modules/feedback";
+@import "modules/header";
+@import "modules/layout";

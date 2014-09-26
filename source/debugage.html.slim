@@ -1,12 +1,14 @@
 ---
-  title: Débugage CSS • Conseils et bonnes pratiques
+  title: Débugage CSS
+  description: Corriger ses erreurs de mise en page, les bugs d'affichages et les problèmes de style
+  layout: article
 ---
 
-.row
-  .large-3.columns
-    = partial 'views/menu'
+markdown:
+  # Débugage
 
-  .large-9.columns
-    = Maruku.new(partial "views/content/debug").to_html;
+  Si vous rencontrez un problème CSS _relisez le code avant de commencer à en ajouter encore plus_ dans l'espoir de le corriger. Le problème existe en CSS et il est déjà écrit, ajouter plus de CSS n'est pas la bonne réponse !
 
-    = partial 'views/feedback'
+  Supprimez vos balises HTML et votre CSS jusqu'à ce que votre problème disparaisse, ensuite vous pouvez déterminer quelle partie du code pose problème.
+  <br><br>
+  Il peut être tentant de mettre `overflow: hidden;` pour cacher les effets d'une bizarrerie de mise en page, mais `overflow` n'a probablement jamais été le problème; __fixez le problème, et non ses symptômes.__

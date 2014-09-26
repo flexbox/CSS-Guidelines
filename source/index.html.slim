@@ -1,17 +1,30 @@
 ---
-  title: Guide CSS • Conseils et bonnes pratiques
-  description: En travaillant sur de grands projets fonctionnant avec des dizaines de développeurs, il est important que nous travaillions tous de façon unifiée
+  title: Guide CSS
+  description: Conseils et bonnes pratiques d'un développeur web front-end, pour créer du CSS évolutif de qualité.
+  layout: homepage
+  custom_class: m-homepage
 ---
 
-.row
-  .large-12.columns
-    h1.giga Feuilles de styles CSS
-    hr
-    h2.alpha Conseils et bonnes pratiques
-    = Maruku.new(partial "views/content/introduction").to_html;
-    
-    .row
-      .small-4.small-centered.columns
-        = link_to 'Commencer la lecture &rtrif;', '/document-css.html', class: 'button large'
-    hr
-    = partial "views/thanks"
+.row.m-intro
+  .large-8.large-centered.columns
+    p.drop-cap
+      'En travaillant sur de grands projets d'envergure fonctionnant avec des dizaines de développeurs, il est important que nous travaillions tous de façon unifiée avec comme objectif commun de :
+    markdown:
+      * Garder les feuilles de style maintenables
+      * Garder le code transparent et lisible
+      * Garder les feuilles de style extensibles
+
+      Il existe plusieures techniques que nous devons employer pour satisfaire ces objectifs.
+      La première partie de ce document traitera de la syntaxe, du formatage et de la taxonomie CSS.
+
+      La deuxième partie traitera de l'approche, l'état d'esprit et l'attitude à avoir pour écrire et architecturer du CSS. Passionnant, hein ?
+
+- data.summary.each_with_index do |s,i|
+  section class="m-segment"
+    article class="segment_content"
+      p.gamma.i-rounded
+        = i + 1
+      h2
+        = link_to s.title, s.path
+      p class="segment_description"
+        = s.description

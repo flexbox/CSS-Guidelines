@@ -1,12 +1,29 @@
 ---
-  title: Système de grille CSS • Conseils et bonnes pratiques
+  title: Système de grille CSS
+  description:
+  layout: article
 ---
 
-.row
-  .large-3.columns
-    = partial 'views/menu'
+markdown:
+  # Taille des interfaces
 
-  .large-9.columns
-    = Maruku.new(partial "views/content/ui").to_html;
+  J'utilise une combinaison de différentes méthodes pour les gérer les tailles d'interfaces : les pourcentages, les pixels, `ems`, `rems` et aucune propriété.
 
-    = partial 'views/feedback'
+  Les systèmes de grilles devraient, idéalement, être mis en pourcentage. Parce que j'utilise les systèmes de grille pour gouverner la largeur des colonnes et des pages, je peux laisser les objets totalement libres de dimensions (voir ci-dessus).
+
+  Les tailles de police en `rems` sont sécurisées avec une taille en pixel.
+  Cette méthode conserve les avantages de l'accessibilité données par les `em` et fixe une taille en `px` pour les vieux navigateurs. Voici une mixin Sass permettant la mise en oeuvre de ce concept (en supposant que vous définissez votre taille de police de base quelque part) :
+
+  ~~~ scss
+  @mixin font-size($font-size) {
+    font-size:$font-size +px;
+    font-size:$font-size / $base-font-size +rem;
+  }
+  ~~~
+
+  J'utilise seulement les pixels pour les objets dont les dimensions sont fixées.
+  Cela inclut des choses comme les images et les sprites dont les dimensions sont en pixels.
+
+  ## Taille des polices
+
+  Je définis une série de classes qui s'apparentent à un système de grille pour le dimensionnement des polices. Ces classes peuvent être utilisées pour respecter une hiérarchie des styles. Pour une explication complète veuillez vous référer à cet article [Pragmatic, practical font-sizing in CSS](http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css)

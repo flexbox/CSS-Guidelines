@@ -1,0 +1,19 @@
+doctype html
+html lang="fr"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    title #{current_page.data.title} #{data.settings.site.title}
+    meta name="description" content="#{current_page.data.description}"
+    meta name="robots" content="index,follow"
+
+    = javascript_include_tag 'application', async: 'true', defer: 'defer'
+
+    = partial 'views/open_graph'
+    = partial 'views/favicon'
+    = stylesheet_link_tag 'application'
+
+  body class="#{current_page.data.custom_class}"
+    #js-main.m-scene
+      == yield
+      = partial "views/global/footer"

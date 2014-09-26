@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-light;
+  margin-bottom: 0.5em;
+}
+
+body {
+  @media #{$small-only}{
+    font-size: rem-calc(14);
+  }
+}
+
+a {
+  @include single-transition(color, 200ms, ease-in-out);
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+.m-homepage h2 a {
+  &:visited:not(.button) {
+    color: $gray;
+  }
+}
+
+.i-rounded {
+  border: 2px solid $secondary-color;
+  border-radius: $global-rounded;
+  float: left;
+  width: rem-calc(60);
+  height: rem-calc(60);
+  text-align: center;
+  padding-top: rem-calc(3);
+  font-weight: $font-weight-light;
+  margin: rem-calc(20 30);
+}

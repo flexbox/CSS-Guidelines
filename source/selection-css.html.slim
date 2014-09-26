@@ -1,12 +1,31 @@
 ---
-  title: Sélection CSS • Conseils et bonnes pratiques
+  title: Sélection CSS
+  description:
+  layout: article
 ---
 
-.row
-  .large-3.columns
-    = partial 'views/menu'
+markdown:
+  # L'intention de sélection
 
-  .large-9.columns
-    = Maruku.new(partial "views/content/intention").to_html;
+  Au lieu d'utiliser les sélecteurs pour cibler un élément du DOM, il est souvent
+  préférable de mettre une classe sur l'élément que vous voulez explicitement styler.
+  Prenons l'exemple précis d'un sélecteur comme `.header ul {}` ...
 
-    = partial 'views/feedback'
+  Imaginons que `ul` est en effet le menu principal de notre site Web. il vit dans
+  l'en-tête et vous pensez que se sera le seul `ul` en ces lieux ; `.header ul {}` fonctionnera, mais ce n'est pas idéal ou souhaitable.
+  Ce n'est pas à l'épreuve du temps et certainement pas assez explicite. Dès que nous ajouterons un autre `ul` pour cet en-tête il va adopter le style de notre navigation principale.
+  Il y a de grandes chances que ce ne soit pas voulu. Cela signifie que nous devons soit remanier une grande quantité de code _ou_ annuler beaucoup de styles sur les `ul`s dans ce `.header` pour supprimer les effets de la sélection globale.
+
+  L'intention de votre sélecteur doit correspondre à la raison de votre style.
+  Demandez-vous **'Est-ce-que je sélectionne cela car c'est un `ul` à l'intérieur
+  de `.header` ou parce que c'est la navigation principale de mon site ?'**.
+  La réponse à cette question permettra de déterminer votre sélecteur.
+
+  Assurez-vous que votre sélecteur clé n'est jamais un élément / type ou
+  une classe abstraite. Vous ne voulez pas vraiment voir comme sélecteurs
+  `.sidebar ul {}` ou `.footer .media {}` dans votre feuille de thème.
+
+  Soyez explicites ; ciblez l'élément que vous voulez modifier, pas son parent. Ne supposez jamais que le balisage ne changera pas. **Codez des sélecteurs qui ciblent ce que vous voulez, pas ce qui se trouve être déjà là.**
+
+  Vous pouvez consulter un article complet sur la question
+  [Shoot to kill; CSS selector intent](http://csswizardry.com/2012/07/shoot-to-kill-css-selector-intent/).

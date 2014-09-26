@@ -1,12 +1,34 @@
 ---
-  title: Nombres magiques CSS • Conseils et bonnes pratiques
+  title: Nombres magiques CSS
+  description:
+  layout: article
 ---
 
-.row
-  .large-3.columns
-    = partial 'views/menu'
+markdown:
+  # Nombres magiques et absolus
 
-  .large-9.columns
-    = Maruku.new(partial "views/content/nombre").to_html;
+  Un nombre magique est un nombre qui est utilisé parce que « ça fonctionne ». Ceux-ci sont mauvais parce qu'ils fonctionnent rarement pour un motif réel et ne sont généralement pas à l'épreuve du temps ou flexibles. Ils ont tendance à fixer des symptômes et non des problèmes.
 
-    = partial 'views/feedback'
+  Voici un exemple :
+
+  ~~~ scss
+  .dropdown-nav li:hover ul {
+    top: 37px;
+  }
+  ~~~
+
+  Utiliser cette déclaration pour déplacer une liste déroulante avec `:hover` est mauvais, puisque 37px est un nombre magique. 37px fonctionne seulement grâce à un coup de chance puisque `.dropdown-nav` a justement 37px de hauteur.
+  <br>
+  Au lieu de cela, vous devriez utiliser :
+
+  ~~~ scss
+  .dropdown-nav li:hover ul {
+    top: 100%;
+  }
+  ~~~
+
+  Dans ce cas, quelque soit la hauteur de `.dropdown-nav`, la liste déroulante se déplacera _toujours_ de 100% par rapport à la hauteur.
+
+  Chaque fois que vous codez en dur un certain nombre, réfléchissez-y à deux fois, si vous pouvez l'éviter en utilisant des mots-clés ou « alias » (`top: 100%` signifie « tout le chemin depuis le sommet ») ou &mdash;encore mieux&mdash; pas de mesures du tout, alors vous devriez probablement y arriver.
+
+  Chaque déclaration de taille codée en dur que vous définissez est un engagement que vous ne pourriez pas nécessairement vouloir conserver.
