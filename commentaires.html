@@ -1,8 +1,4 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>Style CSS pour les commentaires • Conseils et bonnes pratiques</title><meta content="Comment avoir des commentaires lisibles et comment établir des relations entre les feuilles de style" name="description" /><meta content="index,follow" name="robots" /><script src="/assets/javascripts/application-7d78e170.js" type="text/javascript" async="true" defer="defer"></script><meta content="• Conseils et bonnes pratiques" property="og:site_name" /><meta content="website" property="og:type" /><meta content="http://guidecss.fr" property="og:url" /><meta content="Style CSS pour les commentaires" property="og:title" /><meta content="Comment avoir des commentaires lisibles et comment établir des relations entre les feuilles de style" property="og:description" /><meta content="http://guidecss.fr/favicon_base.png" property="og:image" /><link href="https://plus.google.com/u/0/113401424510170217860" rel="publisher" /><link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144" /><link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114" /><link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72" /><link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed" /><link href="favicon.png" rel="shortcut icon" /><link href="favicon.ico" rel="icon" type="image/ico" /><link href="/assets/stylesheets/application-2f368ecf.css" rel="stylesheet" type="text/css" /></head><body><div class="m-scene" id="js-main"><div class="m-detail-layout"><aside class="m-aside scene_element scene_element--fadein"><a class="button" href="/">← Guide CSS</a></aside><div class="m-right-panel m-page scene_element scene_element--fadeinup scene_element--fadeinright-wide"><div class="m-segment"><small><a href="/">Accueil →</a></small><h1 id="commentaires">Commentaires</h1>
-
-<p>J'utilise un style de commentaire docBlock où la taille est limitée à 80 caractères :</p>
-
-<pre><code class="highlight html">/**
+<!DOCTYPE html><html lang=fr><head><meta charset=utf-8 /><meta content="width=device-width, initial-scale=1.0" name=viewport /><title>Style CSS pour les commentaires • Conseils et bonnes pratiques</title><meta content="Comment avoir des commentaires lisibles et comment établir des relations entre les feuilles de style" name=description /><meta content="index,follow" name=robots /><script src="/assets/javascripts/application-7d78e170.js" async=true defer=defer></script><meta content="• Conseils et bonnes pratiques" property="og:site_name"/><meta content=website property="og:type"/><meta content="http://guidecss.fr" property="og:url"/><meta content="Style CSS pour les commentaires" property="og:title"/><meta content="Comment avoir des commentaires lisibles et comment établir des relations entre les feuilles de style" property="og:description"/><meta content="http://guidecss.fr/favicon_base.png" property="og:image"/><link href="https://plus.google.com/u/0/113401424510170217860" rel=publisher /><link href="apple-touch-icon-144x144-precomposed.png" rel=apple-touch-icon-precomposed sizes=144x144 /><link href="apple-touch-icon-114x114-precomposed.png" rel=apple-touch-icon-precomposed sizes=114x114 /><link href="apple-touch-icon-72x72-precomposed.png" rel=apple-touch-icon-precomposed sizes=72x72 /><link href="apple-touch-icon-precomposed.png" rel=apple-touch-icon-precomposed /><link href="favicon.png" rel="shortcut icon"/><link href="favicon.ico" rel=icon type="image/ico"/><link href="/assets/stylesheets/application-2f368ecf.css" rel=stylesheet /></head><body><div class=m-scene id=js-main><div class=m-detail-layout><aside class="m-aside scene_element scene_element--fadein"><a class=button href="/">← Guide CSS</a></aside><div class="m-right-panel m-page scene_element scene_element--fadeinup scene_element--fadeinright-wide"><div class=m-segment><small><a href="/">Accueil →</a></small><h1 id=commentaires>Commentaires</h1> <p>J'utilise un style de commentaire docBlock où la taille est limitée à 80 caractères :</p> <pre><code class="highlight html">/**
  * Ceci est un commentaire de style DocBlock
  *
  * Ceci est une description plus détaillée
@@ -17,48 +13,11 @@
  * Nous n'avons pas de préfixe avec une étoile pour faciliter le
  * copier-coller.
  */
-</code></pre>
-
-<p>Vous devez documenter et commenter votre code autant que vous le pouvez, quoi qu'il arrive. Cela peut sembler trop transparent ou explicite pour vous mais peut-être pas pour un autre développeur. Chaque nouveau morceau de code doit-être documenté.</p>
-
-<h2 id="commentaires-sous-strodes">Commentaires sous stéroïdes</h2>
-
-<p>Il y a un certain nombre de techniques plus avancées que vous pouvez employer en ce qui concerne les commentaires, à savoir :</p>
-
-<ul>
-  <li>Les sélecteurs spécifiques</li>
-  <li>Le codage des balises</li>
-  <li>L'association des objets</li>
-</ul>
-
-<h2 id="slecteurs-spcifiques">Sélecteurs spécifiques</h2>
-
-<p>Vous ne devriez jamais qualifier vos sélecteurs, c'est-à-dire que nous ne devrions jamais écrire <code>ul.nav {}</code> si vous pouvez juste avoir <code>.nav</code>. Qualifier vos sélecteurs diminue leur rendement, inhibe le potentiel de réutilisation d'un objet sur un autre type d'élément et augmente la spécificité du sélecteur. Ce sont toutes des choses qui doivent être évitées à tout prix.</p>
-
-<p>Cependant, il est parfois utile de communiquer à d'autres développeurs où
-vous avez l'intention d'utiliser une classe. Prenons <code>.product-page</code> par exemple, cette classe sonne comme si elle était utilisée sur un conteneur de haut niveau, peut-être avec <code>html</code> ou <code>body</code>, mais seulement avec <code>.product-page</code> il est impossible de le savoir.</p>
-
-<p>Par quasi-qualification de ce sélecteur (autrement dit en commentant le sélecteur de premier plan), nous pouvons communiquer nos intentions pour cette classe :</p>
-
-<pre><code class="highlight scss"><span class="cm">/*html*/</span> <span class="nc">.product-page</span> <span class="p">{}</span>
-</code></pre>
-
-<p>Nous pouvons maintenant voir exactement où s'applique cette classe, sans avoir les inconvénients de la la spécificité ou de la non-réutilisation.</p>
-
-<p>D'autres exemples pourraient être: :</p>
-
-<pre><code class="highlight scss"><span class="cm">/*ol*/</span> <span class="nc">.breadcrumb</span> <span class="p">{}</span>
+</code></pre> <p>Vous devez documenter et commenter votre code autant que vous le pouvez, quoi qu'il arrive. Cela peut sembler trop transparent ou explicite pour vous mais peut-être pas pour un autre développeur. Chaque nouveau morceau de code doit-être documenté.</p> <h2 id=commentaires-sous-strodes>Commentaires sous stéroïdes</h2> <p>Il y a un certain nombre de techniques plus avancées que vous pouvez employer en ce qui concerne les commentaires, à savoir :</p> <ul> <li>Les sélecteurs spécifiques</li> <li>Le codage des balises</li> <li>L'association des objets</li> </ul> <h2 id=slecteurs-spcifiques>Sélecteurs spécifiques</h2> <p>Vous ne devriez jamais qualifier vos sélecteurs, c'est-à-dire que nous ne devrions jamais écrire <code>ul.nav {}</code> si vous pouvez juste avoir <code>.nav</code>. Qualifier vos sélecteurs diminue leur rendement, inhibe le potentiel de réutilisation d'un objet sur un autre type d'élément et augmente la spécificité du sélecteur. Ce sont toutes des choses qui doivent être évitées à tout prix.</p> <p>Cependant, il est parfois utile de communiquer à d'autres développeurs où vous avez l'intention d'utiliser une classe. Prenons <code>.product-page</code> par exemple, cette classe sonne comme si elle était utilisée sur un conteneur de haut niveau, peut-être avec <code>html</code> ou <code>body</code>, mais seulement avec <code>.product-page</code> il est impossible de le savoir.</p> <p>Par quasi-qualification de ce sélecteur (autrement dit en commentant le sélecteur de premier plan), nous pouvons communiquer nos intentions pour cette classe :</p> <pre><code class="highlight scss"><span class="cm">/*html*/</span> <span class="nc">.product-page</span> <span class="p">{}</span>
+</code></pre> <p>Nous pouvons maintenant voir exactement où s'applique cette classe, sans avoir les inconvénients de la la spécificité ou de la non-réutilisation.</p> <p>D'autres exemples pourraient être: :</p> <pre><code class="highlight scss"><span class="cm">/*ol*/</span> <span class="nc">.breadcrumb</span> <span class="p">{}</span>
 <span class="cm">/*p*/</span>  <span class="nc">.intro</span> <span class="p">{}</span>
 <span class="cm">/*ul*/</span> <span class="nc">.image-thumbs</span> <span class="p">{}</span>
-</code></pre>
-
-<p>Dans ces cas, nous savons le contexte d'utilisation de ces classes sans jamais impacter la spécificité des sélecteurs</p>
-
-<h2 id="code-des-balises">Code des balises</h2>
-
-<p>Si vous écrivez un nouveau composant, laissez certaines balises relatives à son utilisation dans un commentaire ci-dessus, par exemple:</p>
-
-<pre><code class="highlight scss"><span class="cm">/**
+</code></pre> <p>Dans ces cas, nous savons le contexte d'utilisation de ces classes sans jamais impacter la spécificité des sélecteurs</p> <h2 id=code-des-balises>Code des balises</h2> <p>Si vous écrivez un nouveau composant, laissez certaines balises relatives à son utilisation dans un commentaire ci-dessus, par exemple:</p> <pre><code class="highlight scss"><span class="cm">/**
  * ^navigation ^lists
  */</span>
 <span class="nc">.nav</span> <span class="p">{}</span>
@@ -67,34 +26,12 @@ vous avez l'intention d'utiliser une classe. Prenons <code>.product-page</code> 
  * ^grids ^lists ^tables
  */</span>
 <span class="nc">.matrix</span> <span class="p">{}</span>
-</code></pre>
-
-<p>Ces balises permettent à d'autres développeurs de trouver des bouts de code en recherchant une fonction, si un développeur a besoin pour travailler avec des listes ils peuvent rechercher <code>^lists</code> et trouver les objets associés <code>.nav</code> et <code>.matrix</code> (et probablement plus).</p>
-
-<h2 id="association-des-objets">Association des objets</h2>
-
-<p>Lorsque l'on travaille d'une manière orientée objet, vous aurez souvent deux
-morceaux de CSS (l'un étant le squelette (l'objet) et l'autre étant la peau
-(l'extension)) qui sont très étroitement liés, mais qui vivent dans des endroits
-très différents.
-Afin d'établir un lien béton entre l'objet et son extension nous utiliserons des
-<em>pointeurs objet / extension</em>. Ce sont simplement des commentaires comme ceci :</p>
-
-<p>Dans votre feuille de style de base :</p>
-
-<pre><code class="highlight scss"><span class="cm">/**
+</code></pre> <p>Ces balises permettent à d'autres développeurs de trouver des bouts de code en recherchant une fonction, si un développeur a besoin pour travailler avec des listes ils peuvent rechercher <code>^lists</code> et trouver les objets associés <code>.nav</code> et <code>.matrix</code> (et probablement plus).</p> <h2 id=association-des-objets>Association des objets</h2> <p>Lorsque l'on travaille d'une manière orientée objet, vous aurez souvent deux morceaux de CSS (l'un étant le squelette (l'objet) et l'autre étant la peau (l'extension)) qui sont très étroitement liés, mais qui vivent dans des endroits très différents. Afin d'établir un lien béton entre l'objet et son extension nous utiliserons des <em>pointeurs objet / extension</em>. Ce sont simplement des commentaires comme ceci :</p> <p>Dans votre feuille de style de base :</p> <pre><code class="highlight scss"><span class="cm">/**
  * Extend `.foo` in theme.css
  */</span>
  <span class="nc">.foo</span> <span class="p">{}</span>
-</code></pre>
-
-<p>Dans votre feuille de style de thème :</p>
-
-<pre><code class="highlight scss"><span class="cm">/**
+</code></pre> <p>Dans votre feuille de style de thème :</p> <pre><code class="highlight scss"><span class="cm">/**
  * Extends `.foo` in base.css
  */</span>
  <span class="nc">.bar</span> <span class="p">{}</span>
-</code></pre>
-
-<p>Ici, nous avons établi une relation concrète entre deux morceaux de code très distincts.</p>
-</div></div></div><footer class="m-footer m-segment"><div class="segment_content"><p>Ce site est rédigé et administré par <a href="/human.txt">David Leuliette</a>. <br />Si vous êtes perdus consultez le <a title="Voir le plan du site" href="/sitemap.html">plan du site</a>. </p></div></footer></div></body></html>
+</code></pre> <p>Ici, nous avons établi une relation concrète entre deux morceaux de code très distincts.</p> </div></div></div><footer class="m-footer m-segment"><div class=segment_content><p>Ce site est rédigé et administré par <a href="/human.txt">David Leuliette</a>. <br/>Si vous êtes perdus consultez le <a title="Voir le plan du site" href="/sitemap.html">plan du site</a>. </p></div></footer></div></body></html>
