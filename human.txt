@@ -1,0 +1,50 @@
+
+    Code a la main depuis 2013
+
+    Humans TXT: Nous Sommes Des Humains, Pas Des Machines
+
+_______________________________________________________________________________
+
+TEAM
+
+Ce site est code a la main par David Leuliette.
+Developpeur front-end
+http://davidl.fr/about.html
+
+_______________________________________________________________________________
+
+TECHNOLOGIE
+
+Middleman
+http://middlemanapp.com/
+
+Foundation
+http://foundation.zurb.com/
+
+SASS
+http://sass-lang.com/
+
+Github
+https://github.com/
+
+_______________________________________________________________________________
+
+RESSOURCES GRAPHIQUES
+
+Lato (font)
+http://www.google.com/fonts/specimen/Lato
+
+_______________________________________________________________________________
+
+REMERCIEMENTS
+
+@kdisneur
+Ruby on rails developer & Middleman guru
+
+@abrisset
+SEO ninja
+
+@csswizardry
+Front-end Architect, designer & developer
+
+_______________________________________________________________________________

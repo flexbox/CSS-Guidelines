@@ -1,123 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://guidecss.fr/commentaires.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/mise-en-page.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/ordre.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://guidecss.fr/anatomie-regle.html</loc>
   </url>
   <url>
     <loc>http://guidecss.fr/taille-interface.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/document-css.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/id.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://guidecss.fr/style.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://guidecss.fr/important.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://guidecss.fr/sitemap.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/commentaires.html</loc>
   </url>
   <url>
     <loc>http://guidecss.fr/construire.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/raccourcis.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://guidecss.fr/convention.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/debugage.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/anatomie-regle.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/index.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>http://guidecss.fr/cssoo.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://guidecss.fr/nombres-magiques.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://guidecss.fr/debugage.html</loc>
   </url>
   <url>
-    <loc>http://guidecss.fr/sass.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/ecrire-css.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/selecteurs.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://guidecss.fr/document-css.html</loc>
   </url>
   <url>
     <loc>http://guidecss.fr/selection-css.html</loc>
-    <lastmod>2014-04-22T00:00:00+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/important.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/mise-en-page.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/nombres-magiques.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/ordre.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/raccourcis.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/sass.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/selecteurs.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/id.html</loc>
   </url>
 </urlset>
