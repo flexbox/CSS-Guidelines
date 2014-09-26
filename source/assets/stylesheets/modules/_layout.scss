@@ -46,6 +46,9 @@
 
 .m-aside {
   background-color: $primary-color;
+  .button {
+    margin: 1em 0 0 2em;
+  }
 }
 
 .m-right-panel .m-header,
@@ -63,16 +66,18 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .m-detail-layout {
-    padding-left: 270px; }
-    .m-detail-layout .m-aside {
-      position: absolute;
-      left: 0;
-      width: 270px; }
-      .m-detail-layout .m-aside .aside_title {
-        position: fixed; }
-      .m-detail-layout .m-aside .m-button {
-        display: block; }
+    padding-left: 270px;
+  }
+  .m-detail-layout .m-aside {
+    position: absolute;
+    left: 0;
+    width: 270px; }
+    .m-detail-layout .m-aside .aside_title {
+      position: fixed; }
+    .m-detail-layout .m-aside .m-button {
+      display: block; }
 }
 
 
