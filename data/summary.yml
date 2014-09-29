@@ -35,7 +35,7 @@
   description: Ajustez vos composants en fonction de la taille des écrans.
   path: "/taille-interface.html"
 -
-  title: "Raccourcis de décalration"
+  title: "Raccourcis de déclaration"
   description: "Coder rapidement ne fait pas forcément gagner du temps."
   path: "/raccourcis.html"
 -
