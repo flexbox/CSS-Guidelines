@@ -1,8 +1,16 @@
-meta property='og:site_name'   content='#{data.settings.site.title}'
-meta property='og:type'        content='website'
-meta property='og:url'         content='#{data.settings.site.url}'
-meta property='og:title'       content='#{data.page.title}'
-meta property='og:description' content='#{data.page.description}'
-meta property='og:image'       content='#{data.settings.site.logo}'
+meta property="og:site_name"   content="#{data.settings.site.title}"
+meta property="og:type"        content="website"
+meta property="og:url"         content="#{data.settings.site.url}"
+meta property="og:title"       content="#{data.page.title}"
+meta property="og:description" content="#{data.page.description}"
+meta property="og:image"       content="#{data.settings.site.logo}"
 
-link rel='publisher' href='#{data.settings.social.google_plus}'
+meta name="twitter:card" content="summary_large_image"
+meta name="twitter:domain" content="#{data.settings.site.url}"
+meta name="twitter:creator" content="#{data.settings.social.name}"
+meta name="twitter:title" content="#{data.settings.site.title}"
+meta name="twitter:image:src" content="#{data.settings.site.url}/twitter-card.jpg"
+meta name="twitter:description" content="#{current_page.data.description}"
+
+link rel="publisher" href="#{data.settings.social.google_plus}"
+

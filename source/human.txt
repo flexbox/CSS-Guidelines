@@ -27,6 +27,9 @@ http://sass-lang.com/
 Github
 https://github.com/
 
+smoothState
+http://weblinc.github.io/jquery.smoothState.js/
+
 _______________________________________________________________________________
 
 RESSOURCES GRAPHIQUES

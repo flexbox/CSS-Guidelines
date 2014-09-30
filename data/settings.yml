@@ -1,10 +1,13 @@
 site:
+  version: 2.0.1
   title: '• Conseils et bonnes pratiques'
   url: 'http://guidecss.fr'
   logo: 'http://guidecss.fr/favicon_base.png'
 social:
   google_plus: 'https://plus.google.com/u/0/113401424510170217860'
-  twitter: 'https://twitter.com/_flexbox'
+  twitter:
+    name: @_flexbox
+    url: 'https://twitter.com/_flexbox'
   github: 'https://github.com/flexbox'
 google_analytics:
   tracking_code: 'UA-42555389-1'
