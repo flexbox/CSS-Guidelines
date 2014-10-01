@@ -1,9 +1,9 @@
 footer.m-footer.m-segment
   .segment_content
     p
-      &copy; 2014
-      = link_to 'Harry Roberts', 'https://twitter.com/csswizardry'
-      'traduit et administré par
+      '&copy; 2014
+      = link_to 'Harry Roberts', 'http://cssguidelin.es/'
+      ', traduit et administré par
       = link_to 'David Leuliette', '/human.txt'
       '.
       br
@@ -12,8 +12,9 @@ footer.m-footer.m-segment
       '.
 
     p class="version"
+      'Version
       = data.settings.site.version
-    p Last updated:
-      time datetime="{{ site.time | date: "%Y-%m-%d" }}"
-        {{ site.time | date: "%-d %B, %Y" }}
-
+    p
+      'Dernière mise à jour
+      time datetime="#{DateTime.now.strftime('%d-%m-%Y')} "
+        = DateTime.now.strftime('%d-%m-%Y')
