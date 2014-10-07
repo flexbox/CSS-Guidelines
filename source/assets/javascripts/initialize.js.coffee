@@ -1,7 +1,7 @@
 (($) ->
   'use strict'
   $body = $('html, body')
-  content = $('#main').smoothState(
+  content = $('#js-main').smoothState(
     prefetch: true,
     pageCacheSize: 4,
     onStart:
