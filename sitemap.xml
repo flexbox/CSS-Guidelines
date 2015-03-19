@@ -1,55 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://guidecss.fr/anatomie-regle.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/taille-interface.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/style.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/sitemap.html</loc>
-  </url>
-  <url>
     <loc>http://guidecss.fr/commentaires.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/construire.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/convention.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/cssoo.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/debugage.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/document-css.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/selection-css.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr/important.html</loc>
-  </url>
-  <url>
-    <loc>http://guidecss.fr</loc>
   </url>
   <url>
     <loc>http://guidecss.fr/mise-en-page.html</loc>
   </url>
   <url>
-    <loc>http://guidecss.fr/nombres-magiques.html</loc>
-  </url>
-  <url>
     <loc>http://guidecss.fr/ordre.html</loc>
   </url>
   <url>
+    <loc>http://guidecss.fr/taille-interface.html</loc>
+  </url>
+  <url>
     <loc>http://guidecss.fr/raccourcis.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/convention.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/debugage.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/selection-css.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/anatomie-regle.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/document-css.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/nombres-magiques.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/sitemap.html</loc>
   </url>
   <url>
     <loc>http://guidecss.fr/sass.html</loc>
@@ -58,6 +46,18 @@
     <loc>http://guidecss.fr/selecteurs.html</loc>
   </url>
   <url>
+    <loc>http://guidecss.fr/construire.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/important.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/style.html</loc>
+  </url>
+  <url>
     <loc>http://guidecss.fr/id.html</loc>
+  </url>
+  <url>
+    <loc>http://guidecss.fr/cssoo.html</loc>
   </url>
 </urlset>
