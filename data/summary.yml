@@ -60,7 +60,7 @@
   path: "/nombres-magiques.html"
 -
   title: "Styles conditionnels"
-  description: Créer une feuille de style par navigateur n'a aps forcément de sens.
+  description: Créer une feuille de style par navigateur n'a pas forcément de sens.
   path: "/style.html"
 -
   title: "Débugage CSS"
