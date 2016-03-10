@@ -1,11 +1,11 @@
 ---
-  title: Anatomie d'une règle CSS
+  title: Anatomie d’une règle CSS
   description: Normes à appliquer concernant la structure des règles CSS
   layout: article
 ---
 
 markdown:
-  # Anatomie d'une règle
+  # Anatomie d’une règle
 
   ~~~ scss
   [selecteur]{
@@ -14,11 +14,11 @@ markdown:
   }
   ~~~
 
-  J'applique un certain nombre de normes concernant la structure des règles CSS.
+  J’applique un certain nombre de normes concernant la structure des règles CSS.
 
   * Utiliser `-` pour délimiter les noms de classe (sauf pour cet exemple de
     [convention de nommage](#naming-conventions))
-  * 2 espaces d'indentation
+  * 2 espaces d’indentation
   * Multi-ligne
   * Déclaration par ordre de pertinence (et non alphabétique)
   * Indenter les déclarations de préfixes et aligner leurs valeurs
@@ -46,9 +46,9 @@ markdown:
   ~~~
 
   Ici, nous pouvons voir que `.widget-heading` doit être un enfant de `.widget`
-  que nous avons indenté `.widget-heading` d'un niveau plus profond que `.widget`.
-  C'est une information utile pour les développeurs qui peut être scannée
-  seulement d'un coup d'oeil suivant l'indentation de notre ensemble de règles.
+  que nous avons indenté `.widget-heading` d’un niveau plus profond que `.widget`.
+  C’est une information utile pour les développeurs qui peut être scannée
+  seulement d’un coup d’oeil suivant l’indentation de notre ensemble de règles.
 
   Nous pouvons également voir que les déclarations de `.widget-heading` sont triées par leur pertinence. `.widget-heading` doit être un élément textuel si nous commençons avec nos règles de texte, suivies par toutes les autres.
 
@@ -70,5 +70,5 @@ markdown:
   .t90 { width: 90% }
   ~~~
 
-  Dans cet exemple (extrait du système de grille d'[inuit.css](
+  Dans cet exemple (extrait du système de grille d’[inuit.css](
   https://github.com/csswizardry/inuit.css/blob/master/inuit.css/partials/base/_tables.scss#L88)), il est plus logique de tout concentrer sur une seule ligne.
