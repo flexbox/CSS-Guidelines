@@ -1,3 +1,3 @@
-#= require "jquery/dist/jquery.min.js"
-#= require "smoothstate/jquery.smoothState.js"
+#= require "jquery/dist/jquery.min"
+#= require "smoothstate/src/jquery.smoothState"
 #= require "initialize"
