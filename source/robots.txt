@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow:
 
-Sitemap: http://www.guidecss.fr/sitemap.xml
+Sitemap: https://guidecss.davidl.fr/sitemap.xml

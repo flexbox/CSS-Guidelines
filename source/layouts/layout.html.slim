@@ -7,8 +7,6 @@ html lang="fr"
     meta name="description" content="#{current_page.data.description}"
     meta name="robots" content="index,follow"
 
-    = javascript_include_tag 'application', async: 'true', defer: 'defer'
-
     = partial 'views/open_graph'
     = partial 'views/favicon'
     = stylesheet_link_tag 'application'
@@ -17,4 +15,3 @@ html lang="fr"
     #js-main.m-scene
       == yield
       = partial "views/global/footer"
-    = google_analytics_universal_tag

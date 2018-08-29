@@ -1,8 +1,8 @@
 site:
   version: '2.0.1'
   title: '• Conseils et bonnes pratiques'
-  url: 'http://guidecss.fr'
-  logo: 'http://guidecss.fr/favicon_base.png'
+  url: 'https://guidecss.davidl.fr'
+  logo: 'https://guidecss.davidl.fr/favicon_base.png'
 social:
   google_plus: 'https://plus.google.com/+DavidLeulietteWeb'
   twitter:
